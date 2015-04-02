@@ -1,0 +1,18 @@
+varDeclFunctDef_list	FOLLOW	}
+indiceIdnestList_tail	FOLLOW	=
+funcBody_	FOLLOW	}
+statBlock	FOLLOW	;	else
+exp_	FOLLOW	;	)	,
+arithExpr_	FOLLOW	]	;	)	,	<	<=	<>	==	>	>=
+term_	FOLLOW	]	;	)	,	<	<=	<>	==	>	>=	+	-	or
+idnest_list_	FOLLOW	=	)	]	;	,	<	<=	<>	==	>	>=	+	-	or	*	/	and	(
+factor_	FOLLOW	]	;	)	,	<	<=	<>	==	>	>=	+	-	or	*	/	and
+fParams	FOLLOW	)
+aParams	FOLLOW	)
+classDecl_list	FOLLOW	program
+funcDef_list	FOLLOW	$	}
+statement_list	FOLLOW	}
+arraySize_list	FOLLOW	;	)	,
+indice_list	FOLLOW	=	)	]	;	,	<	<=	<>	==	>	>=	+	-	or	*	/	and	(	.
+fParamsTail_list	FOLLOW	)
+aParamsTail_list	FOLLOW	)

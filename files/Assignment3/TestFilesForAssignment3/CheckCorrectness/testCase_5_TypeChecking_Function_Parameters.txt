@@ -1,0 +1,64 @@
+// correctness of function parameter type checking
+//correctness number of parameters checking
+// correctness retun types
+
+class ABC{
+	BCD bcd;
+	CDE cde;
+	float func1(float a, int b, BCD c){
+	if( a<1.1 ) then
+		return (a * bcd.func1());
+	else 
+		return(2.2*a + cde.func1(a, 2.2*a));;
+
+	};
+
+	int func2(){
+		
+	};
+};
+
+class BCD{
+	float returnValue;
+
+	float func1(){
+			returnValue = 0.002;
+		return(returnValue);
+	};
+
+};
+
+class CDE{
+	int a;
+	float func1(float a, float b){
+	
+	return(a + b);
+	};
+
+	int convert(float a){
+		int c;
+		return(c);
+	};
+
+};
+
+program{
+	CDE cde;
+	BCD bcd;
+	float a;
+	float b;
+	int c;
+	c = free_funct2( free_funct(  a,  b),  free_funct(  a,  b));
+	a = cde.func1(a * 2.6, b) + bcd.func1();
+};
+
+int free_funct( float a, float b){ // receives float, returns integer
+	CDE cde;
+	cde.a =  free_funct2( cde.convert(a), cde.convert(b));
+
+};
+
+int free_funct2(int a, int b){ //receives integer
+	return(a * b);
+
+};

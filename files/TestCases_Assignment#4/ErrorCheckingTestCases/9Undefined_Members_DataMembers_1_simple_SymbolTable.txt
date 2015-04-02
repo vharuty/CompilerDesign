@@ -1,0 +1,38 @@
+
+Symbol table for: func on line# 7
+	int func(){
+		int value;
+	};
+
+
+Symbol table for: func on line# 21
+	int func(CCC ccc, int a){
+	};
+
+
+Symbol table for: fr_func_defined on line# 51
+	int fr_func_defined(int a, int b, CCC ccc){
+	};
+
+
+
+----------Output for global scope-------
+class AAA{
+	int a;
+	int b;
+	int func();
+};
+class BBB{
+	CCC c;
+	int func(CCC ccc, int a);
+};
+	int fr_func_defined(int a, int b, CCC ccc);
+program{
+	AAA aaa;
+	CCC c;
+	int i;
+	int value;
+};
+----------------------------------------
+
+

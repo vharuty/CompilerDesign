@@ -1,0 +1,43 @@
+
+Symbol table for: memFunc on line# 11
+	float memFunc(float val1, int val2){
+	};
+
+
+Symbol table for: memFunc on line# 22
+	float memFunc(float val1, float val2){
+	};
+
+
+Symbol table for: free_func on line# 35
+	int free_func(int a, float b){
+		int ar_1;
+		int arr_1 [5][5];
+		int value;
+	};
+
+
+Symbol table for: unique on line# 44
+	float unique(float arr [3][3], int i){
+	};
+
+
+
+----------Output for global scope-------
+class AAA{
+	int a;
+	BBB bbb1;
+	float memFunc(float val1, int val2);
+};
+class BBB{
+	int a;
+	int b;
+	float memFunc(float val1, float val2);
+};
+	int free_func(int a, float b);
+program{
+};
+	float unique(float arr [3][3], int i);
+----------------------------------------
+
+

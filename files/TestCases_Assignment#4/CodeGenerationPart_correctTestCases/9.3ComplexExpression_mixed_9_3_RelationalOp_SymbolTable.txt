@@ -1,0 +1,42 @@
+
+Symbol table for: free_func1 on line# 42
+	int free_func1(int intParam2, int intParame1, int b [5][5]){
+		int result;
+	};
+
+
+Symbol table for: free_func2 on line# 53
+	int free_func2(int b [5][5], int intParam1, int intParam2){
+		int finalResult;
+		int i;
+		int j;
+		int k;
+		int localArray [5][5];
+		int result;
+	};
+
+
+Symbol table for: free_func3 on line# 71
+	int free_func3(int b [5][5], int intParam1, int intParam2){
+		int result1;
+		int result2;
+	};
+
+
+
+----------Output for global scope-------
+	int free_func1(int intParam2, int intParame1, int b [5][5]);
+	int free_func2(int b [5][5], int intParam1, int intParam2);
+	int free_func3(int b [5][5], int intParam1, int intParam2);
+program{
+	int array1 [5][5];
+	int i;
+	int j;
+	int k;
+	int param1;
+	int param2;
+	int result;
+};
+----------------------------------------
+
+

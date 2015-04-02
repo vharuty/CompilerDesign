@@ -1,0 +1,202 @@
+// this file checkes how the compiler responds to the multiply declared identifier
+// classes, functions, function parameters, class members, function variables
+// + some additional type checking errors
+class ABC{
+	BCD bcd;
+	BCD bcd;//multipely declared
+	int ABC;//multipely declared
+	
+	int a;
+	int i;
+	int i;//multipely declared identifier
+
+	float ABC(){
+	
+	};
+
+	int func1(int k, int k){ // multipely declared identifier <k>
+		float i;
+		int ABC;
+		int func1;// multipely declared 
+		for(int p = 0.7; p <=10; p = p+1){ //type missmatch=> int is required
+
+			i = (i + p) * bcd.cde.a;
+		};
+
+		if(bcd.array_cde[3][4].a >= bcd.cde.a) then
+			if((i + p) * bcd.cde.a/  bcd.array_cde[3][4].a < 11 ) then 
+				return(i);
+			else return( (i + p) * bcd.cde.a/  bcd.array_cde[3][4].a );;
+		else {
+			for(int j = 0; j <=10; j = j+1){
+				i = (i + j) * bcd.cde.a;
+
+				put( (i + j) * bcd.cde.a);
+			};
+
+		};
+
+	};
+
+	//==== multiply declared  function  <func1> in class===
+//	whatver is defined in this function is basically ignored, because the first definition of it is accepted
+	int func1(int k , float k){
+		int i;
+		for(int p = 0; p <=10; p = p+1){
+
+			i = (i + p) * bcd.cde.a;
+		};
+
+		if(bcd.array_cde[3][4].a >= bcd.cde.a) then
+			if((i + p) * bcd.cde.a/  bcd.array_cde[3][4].a < 11 ) then 
+				return(i);
+			else return( (i + p) * bcd.cde.a/  bcd.array_cde[3][4].a );;
+		else {
+			for(int j = 0; j <=10; j = j+1){
+				i = (i + j) * bcd.cde.a;
+
+				put( (i + j) * bcd.cde.a);
+			};
+
+		};
+
+	};
+
+
+	//==============
+};
+
+class BCD{
+	CDE cde;
+	CDE array_cde[3][4];
+	ABC ab;
+	int a;
+	int b;
+	int func1(){
+		a = ab.func11_ABC(); // is defined in the second deffinition of <class ABC> which is ignores because was redendent 
+	};
+
+	int func1(int a, int b){ // multipely declared identifier <func1>
+	
+	};
+};
+
+
+class CDE{
+	int ssssssssssssss;
+	CDE cde;
+	CDE array_cde[3][4];
+	int a;
+	int b;
+
+	int CDE(){ //multipley defined identifier
+	
+	};
+
+	int func11_ABC( float kl, BCD bcd){
+		int k;
+		int l;
+		for(int j = 0; j <=10; j = j+1){
+			i = (i + j) * bcd.cde.a;
+
+			put( (i + j) * bcd.cde.a);
+
+			l = free_function1(j , l,  i); //invalid parameter list => function has 2 parameters
+			
+			return(j); // can use <j> out of for
+		};
+	};
+
+	// this is ignored because the entire scope of class <ABC> is ignored
+	int func11_ABC(){  // multiplely declared identifier in a multipley declared identifier => this will be ignored
+		for(int j = 0; j <=10; j = j+1){
+			i = (i + j) * bcd.cde.a;
+		};
+	};
+
+	int free_function1(int i, int j, float i){ // multipely defined parameter <i>
+	int k;
+	int l;
+	float kk;
+	ABC abc;
+	BCD bcd;
+	CDE cde;
+	k = abc.func1(i);
+	kk = i; // float deffinition of <i> is ignored => <i> is recognised as integer value
+
+	l = cde.nestedFor(i,j); 
+
+	k = abc.func1(i) * cde.nestedFor(i,j) /(cde.nestedFor(i,j) + abc.func1(i)); // undeclared <nestedFor>
+	return( k * l);
+
+};
+
+};
+
+
+//this class is ignored as multipely declared 
+class CDE{
+	int a;
+	int b;
+	int nestedFor( int m, int n){
+		for(int i = 0; i <= 10; i = i + 1)
+			for(int j = 0; j <= 10; j = j+1 ){
+
+				if(j*i/12*2 + (9+j*i) < i*j) then 
+					i = i *j;
+				else if(j< i-1) then 
+				{
+					i = j;
+				}
+				else{
+					j = j;
+				};;
+
+			};;
+	};
+};
+
+
+program{
+	ABC abc;
+
+	//abc.a = free_function1(abc.bcd.a, abc.bcd.b);
+	abc.a = free_function1(abc.bcd.a, abc.bcd.b);
+};
+
+float free_function1(int i, int j, int i){
+	int k;
+	int l;
+	ABC abc;
+	BCD bcd;
+	CDE cde;
+	k = abc.func1(i);
+
+	l = cde.nestedFor(i,j);  // deffinition <CDE> that was accepted contain redendent function  <nestedFor> => <nestedFor> was ignored 
+
+	k = abc.func1(i) * cde.nestedFor(i,j) /(cde.nestedFor(i,j) + abc.func1(i)); 
+	return( k * l);
+
+};
+
+int free_function1(int i, int j){
+	int k;
+	int l;
+	ABC abc;
+	BCD bcd;
+	CDE cde;
+	int ABC;
+	k = abc.func1(i);
+	
+
+	l = cde.nestedFor(i,j); 
+
+	k = abc.func1(i) * cde.nestedFor(i,j) /(cde.nestedFor(i,j) + abc.func1(i)); // <nestedFor>  is declared in the second <CDE> class that is ignored
+
+	return( k * l);
+
+};
+
+int ABC(){
+
+};

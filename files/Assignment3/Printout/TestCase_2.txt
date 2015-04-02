@@ -1,0 +1,121 @@
+Enter file name to scan:
+C:\Users\vika\Desktop\HarutyunyanCompilerAss3\files\sourceFile.cpp
+.\files\Assignment2\Syntax\RULLS.txt
+.\files\Assignment2\Syntax\FIRST.txt
+.\files\Assignment2\Syntax\FOLLOW.txt
+.\files\Assignment2\Syntax\FIRSTFOLLOW.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+
+Symbol table for: func6 on line# 11
+        CL3 func6(CL2 obj_cl2){
+        };
+
+
+Symbol table for: func1 on line# 14
+        int func1(CL2 var){
+                int array_ex [10][10];
+                int b;
+                int c;
+                float c_float;
+                float k;
+        };
+
+
+Symbol table for: func2 on line# 37
+        ABC func2(){
+                ABC returnVal;
+        };
+
+
+Symbol table for: func2 on line# 55
+        int func2(int a){
+                int b;
+                int returnVal;
+        };
+
+
+Symbol table for: function1 on line# 66
+        int function1(int a, int b){
+        };
+
+
+Symbol table for: free_func1 on line# 122
+        CL3 free_func1(){
+                int a;
+                CL1 obj_cl1;
+                CL2 obj_cl2;
+                CL3 obj_cl3;
+        };
+
+
+Symbol table for: free_func2 on line# 135
+        float free_func2(int a, CL2 array_var1){
+                int arr [1][2][3];
+                CL2 array_var2 [2][4];
+                int b;
+                int c;
+                CL2 class_var;
+                CL3 var;
+        };
+
+
+Symbol table for: free_func3 on line# 150
+        int free_func3(int k){
+        };
+
+
+
+----------Output for global scope-------
+class ABC{
+};
+class CL1{
+        int a;
+        int ar [10][3];
+        CL2 array_var1 [10][5];
+        float b;
+        float c;
+        CL3 cl3;
+        int func1(CL2 var);
+        ABC func2();
+        CL3 func6(CL2 obj_cl2);
+};
+class CL2{
+        int a;
+        float b;
+        int func2(int a);
+        CL3 var_cl3 [5];
+};
+class CL3{
+        int function1(int a, int b);
+        int val;
+};
+        CL3 free_func1();
+        float free_func2(int a, CL2 array_var1);
+        int free_func3(int k);
+program{
+        int a;
+        int array_2 [2][3][4];
+        CL2 array_var2 [2][4];
+        CL2 array_var3 [2][3];
+        int cc [7][9];
+        CL1 class_var;
+        int k;
+        float kk;
+        int l [10];
+        int tt;
+        CL3 var;
+};
+----------------------------------------
+
+
+file parsing is finished
+----------------------------------------
+0 ERROR:s
+0 CASCADING ERRORS:s
+0 SEMANTIC ERROR:s

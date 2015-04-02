@@ -1,0 +1,19 @@
+
+
+----------Output for global scope-------
+class AAA{
+	int a;
+	int b;
+};
+program{
+	int a;
+	AAA aaa_obj;
+	int array_ [3][3];
+	int b;
+	float c;
+	float cc;
+	int d;
+};
+----------------------------------------
+
+

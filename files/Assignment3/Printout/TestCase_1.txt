@@ -1,0 +1,90 @@
+Enter file name to scan:
+C:\Users\vika\Desktop\HarutyunyanCompilerAss3\files\sourceFile.cpp
+.\files\Assignment2\Syntax\RULLS.txt
+.\files\Assignment2\Syntax\FIRST.txt
+.\files\Assignment2\Syntax\FOLLOW.txt
+.\files\Assignment2\Syntax\FIRSTFOLLOW.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+
+Symbol table for: func1 on line# 11
+        int func1(){
+                int i;
+                int j;
+        };
+
+
+Symbol table for: function_float on line# 26
+        int function_float(float a, float b){
+        };
+
+
+Symbol table for: convert on line# 30
+        int convert(float k){
+                int a;
+        };
+
+
+Symbol table for: returnObj on line# 42
+        int returnObj(int a, int bc){
+                int b [2][6];
+                int i;
+                int j;
+        };
+
+
+Symbol table for: free_func1 on line# 62
+        int free_func1(){
+                int a;
+                int b [2][6];
+                BCD bcd;
+                float c;
+                float d;
+                int i;
+                int j;
+        };
+
+
+
+----------Output for global scope-------
+class ABC{
+        float b [10];
+        BCD bcd;
+        CDE cde [10][10];
+        CDE cde2;
+        int func1();
+        float i;
+        float j;
+};
+class BCD{
+        int convert(float k);
+        int function_float(float a, float b);
+};
+class CDE{
+        int a;
+        BCD bcd;
+        float c;
+        float d;
+        int returnObj(int a, int bc);
+};
+        int free_func1();
+program{
+        int a;
+        ABC abc;
+        float c;
+        CDE cde;
+        float d;
+};
+----------------------------------------
+
+
+file parsing is finished
+----------------------------------------
+0 ERROR:s
+0 CASCADING ERRORS:s
+0 SEMANTIC ERROR:s

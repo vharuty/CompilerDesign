@@ -1,0 +1,129 @@
+Enter file name to scan:
+C:\Users\vika\Desktop\HarutyunyanCompilerAss3\files\sourceFile.cpp
+.\files\Assignment2\Syntax\RULLS.txt
+.\files\Assignment2\Syntax\FIRST.txt
+.\files\Assignment2\Syntax\FOLLOW.txt
+.\files\Assignment2\Syntax\FIRSTFOLLOW.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+SEMERR#6:       Type mismatch on line#  14:     parameters of the same type are rquired
+SEMERR#6:       Type mismatch on line#  15:     parameters of the same type are rquired
+
+SEMERR#8:       Invalid return type for function  <f3>  on line#  20    is expected <int>
+
+
+Symbol table for: f3 on line# 10
+        int f3(int p1, float p2){
+                float f1;
+                int k;
+        };
+
+SEMERR#1:       Undeclared identifier on line# 28 : p2
+
+SEMERR#1:       Undeclared identifier on line# 29 : p2
+
+
+SEMERR#8:       Invalid return type for function  <f5>  on line#  30    is expected <float>
+
+SEMERR#1:       Undeclared identifier on line# 34 : p2
+
+
+Symbol table for: f5 on line# 24
+        float f5(int p1){
+                ABC f1;
+        };
+
+SEMERR#6:       Type mismatch on line#  46:     parameters of the same type are rquired
+SEMERR#6:       Type mismatch on line#  47:     parameters of the same type are rquired
+
+SEMERR#8:       Invalid return type for function  <f1>  on line#  52    is expected <int>
+
+
+Symbol table for: f1 on line# 45
+        int f1(int p1, float p2){
+        };
+
+SEMERR#6:       Type mismatch on line#  57:     parameters of the same type are rquired
+SEMERR#6:       Type mismatch on line#  58:     parameters of the same type are rquired
+
+SEMERR#8:       Invalid return type for function  <f3>  on line#  59    is expected <float>
+
+
+Symbol table for: f3 on line# 56
+        float f3(int p1, float p2){
+        };
+
+SEMERR#1:       Undeclared identifier on line# 74 : l
+
+SEMERR#9:       Function parameter type missmatch on line# 74 => float is required in function f1
+
+Symbol table for: f1 on line# 71
+        ABC f1(float p1, ABC abc){
+                ABC abc2;
+        };
+
+SEMERR#1:       Undeclared identifier on line# 86 : f2
+
+SEMERR#1:       Undeclared identifier on line# 86 : f2
+
+
+SEMERR#10:      Wrong number of indices on line# 87 :cde=> 3 dimentions are required
+SEMERR#1:       Undeclared identifier on line# 87 : f2
+
+SEMERR#1:       Undeclared identifier on line# 88 : cd
+
+SEMERR#1:       Undeclared identifier on line# 88 : f2
+
+
+Symbol table for: f1 on line# 92
+        ABC f1(int p1, ABC abc){
+                ABC abc2;
+        };
+
+
+Symbol table for: f4 on line# 102
+        float f4(){
+                int a;
+        };
+
+
+
+----------Output for global scope-------
+class ABC{
+        int a;
+        int b;
+        float c;
+        int f3(int p1, float p2);
+        float f5(int p1);
+};
+class BCD{
+        int a;
+        int b;
+        int f1(int p1, float p2);
+        float f3(int p1, float p2);
+};
+class CDE{
+        ABC abc;
+        ABC f1(float p1, ABC abc);
+};
+        ABC f1(int p1, ABC abc);
+        float f4();
+program{
+        ABC abc2;
+        CDE cde [10][3][4];
+        int p1;
+        float p11;
+};
+----------------------------------------
+
+
+file parsing is finished
+----------------------------------------
+0 ERROR:s
+0 CASCADING ERRORS:s
+21 SEMANTIC ERROR:s

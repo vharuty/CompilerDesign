@@ -1,0 +1,143 @@
+//error checking for nested calles and arrays
+// in addition, validation of function calls, number and type of function parameters
+class CL1{
+	int a;
+	float b;
+	float c;
+	CL2 array_var1[10][5];
+	int ar[10][3];
+
+	CL3 func1(CL2 var){
+		int b; // scope variable
+		int c; // scope variable
+		ar = b; // wrong number of indices =>  <ar[10][3]>
+
+		c =  array_var1[10].a; //  // wrong number of indices <array_var1[10][5]>
+		a = free_func3(b); // <a> is a class variable
+		c = var.var_cl3.function1(a, b);
+
+		c = var.var_cl3.function1(a, b, c); // invalid parameter list 
+
+		c = var.var_cl3.function1(a, b) + 5 - array_var1[10].a; // wrong number of indices
+
+
+
+			b = a + 2.4; // float value  + int value=> should be returned an error 
+
+	
+		return(c); // semantic error invalid return type
+	};
+
+	int func2(){
+		int returnVal;
+		
+		returnVal = func1(); // local function <func1> needs 1 parameter
+	};
+
+
+};
+
+class CL2{
+	 int a;
+	 float b;
+	CL3 var_cl3;
+
+	int func2(int a){
+		int returnVal;
+		
+		returnVal = func1(); // calls <func1> without parameters => free function
+	};
+
+};
+
+class CL3{
+
+	int val;
+	int function1(int a, int b){
+	
+		return(a + b);
+	};
+};
+
+program{
+	 CL2 array_var3[2][3];
+	 int array_2[2][3][4];
+	 int l;
+	int  k;
+	int cc[7][9];
+	CL1 class_var;
+	k = class_var.array_var1[10].func2(l[9]); // wrong number of indices, <l> is not an array
+		k = class_var.array_var1[10].func2(cc); // // wrong number of indices
+		k = class_var.array_var1[10].func2(cc[5]); //// wrong number of indices
+		
+
+	 array_2 = l;// wrong number of indices
+	 k[8] = 1; // Invalid parameter type use => k is not an array
+	 array_2[1][1][1] = l;
+	 array_2[6][5][3][2] = 1;// wrong number of indices
+	 array_2[4][4] = 4;// wrong number of indices
+	 k =  array_2;// wrong number of indices
+	 l = k[8];// Invalid parameter type use 
+
+
+
+	 
+
+
+k =  free_func2(array_var3[2][3].a, array_var3[2]); // wrong number of indices
+k =  free_func2(array_var3[2][3].a, array_var3[2]); // wrong number of indices
+k =  free_func2(array_var3.a, array_var3[2]); // wrong number of indices
+
+
+};
+
+CL3 free_func1(){
+	CL1 obj_cl1;
+	CL3 obj_cl3;
+	CL2 obj_cl2;
+	obj_cl3 =  obj_cl1.func1(obj_cl2); 
+
+
+	return(obj_cl3);
+	
+};
+
+ float free_func2(int a, CL2 array_var1){
+	
+			int b; // scope variable
+		int c; // scope variable
+		int arr[1][2][3];
+		CL2 array_var2[2][4];
+		CL3 var;
+		CL2 class_var;
+
+		c = var.function1(array_var2[1][1 + a].a + array_var2.a + arr[1][2], array_var2[1][1 + a].a + b[5]);
+		c = var.function1(class_var[4].a,b);
+		c= var.function1();
+		c = var.function1(class_var[4].a);
+		c = var.function1(class_var[4].a, b, c);
+
+		c =  array_var1[2].a; // is not an array
+		a = free_func3(b);
+		c = var.function1(a, b);
+
+		c = var.function1(a, b, c);// invalid parameter list
+
+		c = array_var2[1][1 + a].a + b[5]; // invalid parameter type use
+		c = array_var2[1][1 + a].a + array_var2[2].a; //array_var2[2][4]
+		c = array_var2[1][1 + a].a + array_var2.a;
+		c = array_var2[1][1 + a].a + array_var2.a + arr[1][2];
+		c = array_var2[1][1 + a].a + array_var2.a + arr[1][2][7][9];
+				c = array_var2[1][1 + a].a + array_var2.a + arr;
+
+
+};
+
+int free_func3(int k){
+	return(k+1);
+};
+
+int func1( ){
+
+
+};

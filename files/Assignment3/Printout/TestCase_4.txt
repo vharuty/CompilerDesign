@@ -1,0 +1,76 @@
+Enter file name to scan:
+C:\Users\vika\Desktop\HarutyunyanCompilerAss3\files\sourceFile.cpp
+.\files\Assignment2\Syntax\RULLS.txt
+.\files\Assignment2\Syntax\FIRST.txt
+.\files\Assignment2\Syntax\FOLLOW.txt
+.\files\Assignment2\Syntax\FIRSTFOLLOW.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+
+Symbol table for: func1 on line# 10
+        int func1(int k){
+                int i;
+                int j;
+                int p;
+        };
+
+
+Symbol table for: func1 on line# 40
+        int func1(){
+        };
+
+
+Symbol table for: nestedFor on line# 49
+        int nestedFor(int m, int n){
+                int i;
+                int j;
+        };
+
+
+Symbol table for: free_function1 on line# 76
+        int free_function1(int i, int j){
+                ABC abc;
+                BCD bcd;
+                CDE cde;
+                int k;
+                int l;
+        };
+
+
+
+----------Output for global scope-------
+class ABC{
+        int a;
+        BCD bcd;
+        int func1(int k);
+        int i;
+};
+class BCD{
+        int a;
+        CDE array_cde [3][4];
+        int b;
+        CDE cde;
+        int func1();
+};
+class CDE{
+        int a;
+        int b;
+        int nestedFor(int m, int n);
+};
+        int free_function1(int i, int j);
+program{
+        ABC abc;
+};
+----------------------------------------
+
+
+file parsing is finished
+----------------------------------------
+0 ERROR:s
+0 CASCADING ERRORS:s
+0 SEMANTIC ERROR:s

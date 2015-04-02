@@ -1,0 +1,69 @@
+program
+{
+	int k;
+
+	int array[10];
+
+	k = 0;
+	for(int i = 0; i < 10; i = i + 1)
+		array[i] = i * 2;;
+	get(k);
+	put(search(array, k, 10));
+};
+
+
+
+// reference http://en.wikipedia.org/wiki/Recursion_%28computer_science%29
+/*
+Call binary_search with proper initial conditions.
+
+INPUT:
+data is an array of integers SORTED in ASCENDING order,
+toFind is the integer to search for,
+count is the total number of elements in the array
+
+OUTPUT:
+result of binary_search
+
+*/
+int search(int data[10], int toFind, int count)
+{
+	//  Start = 0 (beginning index)
+	//  End = count - 1 (top index)
+	return (binary_search(data, toFind, 0, count-1));
+};
+
+/*
+Binary Search Algorithm.
+
+INPUT:
+data is a array of integers SORTED in ASCENDING order,
+toFind is the integer to search for,
+start is the minimum array index,
+end is the maximum array index
+OUTPUT:
+position of the integer toFind within array data,
+-1 if not found
+*/
+int binary_search(int data[10], int toFind, int start, int end)
+{
+	//Get the midpoint.
+	int mid;
+
+	mid = start + (end - start)/2;   //Integer division
+
+	//Stop condition.
+	if (start > end) then
+		return (-1);
+	else 
+		if (data[mid] == toFind) then       //Found?
+			return (mid);
+		else 
+			if (data[mid] > toFind) then      //Data is greater than toFind, search lower half
+				return (binary_search(data, toFind, start, mid-1));
+			else                                 //Data is less than toFind, search upper half
+				return (binary_search(data, toFind, mid+1, end));
+	;
+	;
+	;
+};

@@ -1,0 +1,23 @@
+// processing get and put 
+// receives input from kebord
+
+program{
+int array_[3][3];
+int array_2[3][3];
+
+for(int i = 0; i <= 2; i = i+1)
+	for(int j = 0; j <= 2; j = j+1)
+		get(array_[i][j]);;;
+
+
+for(int k = 0; k <= 2; k = k +1)
+	for(int l = 0; l <= 2;  l = l+1)
+		array_2[k][l] = array_[k][l] +2;;;
+
+
+for(int m = 0; m <= 2; m = m  + 1)
+	for( int n = 0; n <= 2; n = n + 1)
+		put(array_2[m][n]);;;
+
+
+};

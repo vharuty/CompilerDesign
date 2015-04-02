@@ -1,0 +1,19 @@
+//This file is to show how EPSILON rules work for global concepts
+
+class myClass1 { 
+	int aaa;
+	float abc; 
+
+} ; 
+class myClass2 {  
+
+} ; 
+
+program { 
+
+} ;
+
+ int FUNCTION ( ) {
+
+
+};  

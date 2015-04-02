@@ -1,0 +1,89 @@
+Enter file name to scan:
+C:\Users\vika\Desktop\HarutyunyanCompilerAss3\files\sourceFile.cpp
+.\files\Assignment2\Syntax\RULLS.txt
+.\files\Assignment2\Syntax\FIRST.txt
+.\files\Assignment2\Syntax\FOLLOW.txt
+.\files\Assignment2\Syntax\FIRSTFOLLOW.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+SEMERR#11:      Multiply declared identifier on the line# 10: ABC
+SEMERR#11:      Multiply declared identifier on the line# 14: k
+SEMERR#11:      Multiply declared identifier on the line# 15: f1
+SEMERR#6:       Type mismatch on line#  17:     parameters of the same type are rquired
+SEMERR#6:       Type mismatch on line#  18:     parameters of the same type are rquired
+
+SEMERR#8:       Invalid return type for function  <f1>  on line#  23    is expected <int>
+
+
+Symbol table for: f1 on line# 12
+        int f1(int p1, float p2){
+                int k;
+        };
+
+SEMERR#11:      Multiply declared identifier on line# 27 : f1
+
+Symbol table for: f1 on line# 27
+Function 'f1' on line# 27 is ignored because of an error on its' decalaration=>
+scope is not printed
+SEMERR#11:      Multiply declared identifier  on the line 44: ABC
+SEMERR#6:       Type mismatch on line#  77:     parameters of the same type are rquired
+SEMERR#9:       Function parameter type missmatch on line# 77 => float is required in function f1
+
+Symbol table for: f1 on line# 74
+        ABC f1(float p1, ABC abc){
+                ABC abc2;
+        };
+
+SEMERR#1:       Undeclared identifier on line# 89 : f2
+
+SEMERR#1:       Undeclared identifier on line# 89 : f2
+
+SEMERR#1:       Undeclared identifier on line# 90 : cd
+
+SEMERR#1:       Undeclared identifier on line# 90 : f2
+
+SEMERR#5:       Invalid parameter list on line# 91: f1 =>Invalid number of parameters =>2 parameters are required
+
+Symbol table for: f1 on line# 95
+        ABC f1(int p1, ABC abc){
+                ABC abc2;
+        };
+
+SEMERR#11:      Multiply declared identifier on line# 106 : f1
+
+Symbol table for: f1 on line# 106
+Function 'f1' on line# 106 is ignored because of an error on its' decalaration=>
+scope is not printed
+
+
+----------Output for global scope-------
+class ABC{
+        int a;
+        int b;
+        float c;
+        int f1(int p1, float p2);
+};
+class CDE{
+        ABC abc;
+        ABC f1(float p1, ABC abc);
+};
+        ABC f1(int p1, ABC abc);
+program{
+        ABC abc2;
+        CDE cde [10][3][4];
+        int p1;
+        float p11;
+};
+----------------------------------------
+
+
+file parsing is finished
+----------------------------------------
+0 ERROR:s
+0 CASCADING ERRORS:s
+16 SEMANTIC ERROR:s

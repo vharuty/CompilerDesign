@@ -1,0 +1,113 @@
+// validates multiply defined identifier in different scopes
+// variables, functions, classes
+// simple version. Note that there are 2 additional files for checking multiply defined identifiers
+
+class ABC{
+
+	int  a;
+	int b;
+	float c;
+	int ABC; //multiply defined identifier <ABC>
+	
+	int f1( int p1, float p2){
+		int k;
+		float k;
+		float f1;
+
+		if(p1 + p2 >= 10) then {
+			p1 = (a+b) * p2;
+			return(p1);
+			
+			}
+		else	
+		return(p2);;
+	
+	};
+	// multiply defined identifier <f1>
+		float f1( int p1){
+		
+			ABC f1;
+			
+			if(p1 + p2 >= 10) then {
+			p1 = (a+b) * p2;
+			return(p1);
+			
+			}
+		else	
+		return(p2);;
+	
+	};
+
+};
+
+//multiply defined identifier <ABC>
+class ABC{
+	int a;
+	int b;
+		
+		int f1( int p1, float p2){
+		if(p1 + p2 >= 10) then {
+			p1 = (a+b) * p2;
+			return(p1);
+			
+			}
+		else	
+		return(p2);;
+		};
+
+		// multiply defined identifier <f1> => ignored
+		float f1( int p1, float p2){
+		if(p1 + p2 >= 10) then {
+			p1 = (a+b) * p2;
+			return(p1);
+			
+			}
+		else	
+		return(p2);;
+	
+		};
+};
+
+class CDE{
+ ABC abc;
+ 
+ ABC f1(float p1, ABC abc){
+	ABC abc2;
+ 
+	abc2 = f1(p1-1, abc);
+	return(abc2); 
+	
+ };
+
+};
+
+program{
+	CDE cde[10][3][4];
+	ABC abc2;
+	int p1;
+	float p11;
+	abc2 = f2( p1, f2(p1 - 1, abc2));
+	abc2 = cd[1][1][1].f1(p11, f2(p1 - 1, abc2));
+	p11 = f1(); // this function does not exist in the global scope
+
+};
+
+ ABC f1(int p1, ABC abc){
+	ABC abc2;
+	
+	abc2 = f1(p1-1, abc);
+	return(abc2); 
+	
+ };
+
+
+ // function contains multipely declared identifiers but because function 
+ // is not being iserted, scope is ignored
+ float f1(){
+int a;
+float a;
+ABC a;
+int f1;
+
+ // do something
+ };

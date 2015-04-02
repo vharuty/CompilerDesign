@@ -1,0 +1,35 @@
+// file contains statement within <class> but outside of a function body
+
+class MyClass{
+		MyClass1 var5[10][20] ;
+int funk(){
+
+	for (int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) 
+		for ( int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) ; ;
+
+
+}
+
+	// statement outside of function within a class
+	for (int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) 
+		for ( int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) ; ;
+
+
+};
+
+program {
+
+	
+	MyClass1 var5[10][20] ;
+	MyClass1 var6;
+	int var7; 
+	
+	for (int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) 
+		for ( int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) ; ;
+	
+	  } ;
+
+
+
+
+

@@ -1,0 +1,16 @@
+
+
+----------Output for global scope-------
+class AAA{
+	int a;
+	int b;
+};
+program{
+	int a;
+	AAA aaa;
+	int arr [3][3];
+	int b;
+};
+----------------------------------------
+
+

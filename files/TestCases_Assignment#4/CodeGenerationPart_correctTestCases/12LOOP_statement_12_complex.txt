@@ -1,0 +1,130 @@
+// Loop statement
+// includinf statement blocks
+
+/*    => run out of memory
+class AAA{
+	int arr_1[10][10];
+
+	int compute(){
+
+		int small;
+		int big;
+		int even_count;
+		int odd_count;
+
+		for(int i = 0; i <= 9; i = i +1)
+			for(int j = 0; j <= 9; j= j +1){
+				if(i >= 5) then{ 
+					arr_1[i][j] = i+j;
+					big = big +1;
+				}
+				else{
+					arr_1[i][j] = j*j;
+					small = small +1;
+				};
+			};;
+
+		for(int k = 0; k <10; k =  k+1)
+			for(int l = 0; l < 10; l = l +1)
+				if( (arr_1[k][l] / 2) * 2 == arr_1[k][l]) then{ // if the number is even
+					even_count = even_count + 1;
+					arr_1[k][l] = even_count;
+				}else{
+
+					odd_count = odd_count + 1;
+					arr_1[k][l] = odd_count;
+
+				};;;
+
+				return(odd_count + even_count);
+	};
+
+}; */
+
+program{
+	int arr_1[10][10];
+	int value_line[10]; // keeps sum of each line
+	int value_col;
+	int small;
+	int big;
+	int even_count;
+	int odd_count;
+//	AAA myClass;
+
+	for(int i = 0; i <= 9; i = i +1){
+
+		for(int j = 0; j <= 9; j= j +1){
+			if(i >= 5) then{ 
+				arr_1[i][j] = i+j;
+				big = big +1;
+			}
+			else{
+				arr_1[i][j] = j*j;
+				small = small +1;
+			};
+			value_col = value_col + arr_1[i][j] ; // compute sum of each line by adding colunns
+		};
+		value_line[i] =  value_col;
+		value_col = 0;
+	};
+
+
+	for(int k = 0; k <10; k =  k+1)
+		for(int l = 0; l < 10; l = l +1)
+			if( (arr_1[k][l] / 2) * 2 == arr_1[k][l]) then{ // if the number is even
+				even_count = even_count + 1;
+				arr_1[k][l] = even_count;
+			}else{
+
+				odd_count = odd_count + 1;
+				arr_1[k][l] = odd_count;
+
+			};;;
+
+
+			put(odd_count);
+			put(even_count);
+			put(free_funct_compute()); // outputs the sum of odd and even 
+	//		put(myClass.compute()); // outputs the sum of odd and even 
+
+			for( int p = 0; p <= 9; p = p + 1 )
+				put(value_line[p]);;
+
+};
+
+int free_funct_compute(){
+
+	int small;
+	int big;
+	int even_count;
+	int odd_count;
+	int arr_1[10][10];
+
+	for(int i = 0; i <= 9; i = i +1)
+		for(int j = 0; j <= 9; j= j +1){
+			if(i >= 5) then{ 
+				arr_1[i][j] = i+j;
+				big = big +1;
+			}
+			else{
+				arr_1[i][j] = j*j;
+				small = small +1;
+			};
+		};;
+
+	for(int k = 0; k <10; k =  k+1)
+		for(int l = 0; l < 10; l = l +1)
+			if( (arr_1[k][l] / 2) * 2 == arr_1[k][l]) then{ // if the number is even
+				even_count = even_count + 1;
+				arr_1[k][l] = even_count;
+			}else{
+
+				odd_count = odd_count + 1;
+				arr_1[k][l] = odd_count;
+
+			};;;
+
+			return(odd_count + even_count); // outputs sum of odd and even numbers
+
+
+};

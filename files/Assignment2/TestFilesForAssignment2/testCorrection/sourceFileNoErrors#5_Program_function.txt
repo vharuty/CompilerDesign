@@ -1,0 +1,29 @@
+// file contains only <program> and function dffinition
+ 
+
+program {
+
+	
+	MyClass1 var5[10][20] ;
+	MyClass1 var6;
+	int var7; 
+	 abc = function1(a,b);
+	
+	for (int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) 
+		for ( int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) ; ;
+	
+	  } ;
+
+	int function1(int a, float b){
+
+	for (int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) 
+		for ( int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) ; ;
+	
+	  } ;
+
+
+
+
+
+
+

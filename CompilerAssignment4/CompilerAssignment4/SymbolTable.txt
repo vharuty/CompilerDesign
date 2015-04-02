@@ -1,0 +1,9 @@
+A	class
+			a	int
+			b	int
+			fun	int
+			 [10]	[15]	[20]	
+ 
+program	program
+			int	function3
+			

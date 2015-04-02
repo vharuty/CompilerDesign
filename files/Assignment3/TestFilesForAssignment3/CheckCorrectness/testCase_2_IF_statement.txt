@@ -1,0 +1,152 @@
+// correctness <if> statement
+
+class CL1{
+	int a;
+	float b;
+	float c;
+	CL2 array_var1[10][5];
+	int ar[10][3];
+	CL3 cl3;
+
+	CL3 func6(CL2  obj_cl2){
+
+	};
+	int func1(CL2 var){
+		int b; // scope variable
+		int  c; // scope variable
+		float k;
+		int array_ex[10][10];
+		float c_float;
+
+
+		c =  array_var1[10][3].a;
+		a = free_func3(b); // <a> is a class variable
+		c = var.var_cl3[1].function1(a, b);
+
+
+		//int value												//complex expression as an array index							
+		array_var1[a + b * free_func3(b)][5].a	=	array_ex[	var.var_cl3[1].function1( free_func3(b) , b)  - array_var1[a + b * free_func3(b)][5].a	][5] /
+			(c * var.var_cl3[1].function1(a, b) + 5 and c * var.var_cl3[1].function1(a, b) + 5  * var.var_cl3[1].function1(a, b) + 5);	
+
+
+
+
+		return(c);
+	};
+
+	ABC func2(){
+		ABC returnVal;
+
+		return(returnVal); 
+	};
+
+
+};
+
+class ABC{
+
+};
+
+class CL2{
+	int a;
+	float b;
+	CL3 var_cl3[5];
+
+	int func2(int a){
+		int returnVal;
+		int b; 
+		returnVal = var_cl3[2].function1(a, b); // <b> is local, <a> is a class member
+	};
+
+};
+
+class CL3{
+
+	int val;
+	int function1(int a, int b){
+
+		return(a + b);
+	};
+};
+
+program{
+	CL2 array_var3[2][3];
+	int array_2[2][3][4];
+	int l[10];
+	int  k;
+	float kk;
+	int cc[7][9];
+	CL3 var;
+	int a;
+	int tt;
+	CL1 class_var;
+	CL2 array_var2[2][4];
+	array_2[1][1][1] = l[5];
+	k = (class_var.array_var1[10][5].func2(l[9]) * class_var.array_var1[10][5].func2(cc[5][2]) + array_2[1][1][1]) / array_var3[2][3]. var_cl3[5]. function1(k, l[1]);
+	array_2[2][3][4] = array_var3[2][3]. var_cl3[5].val;
+	array_var3[2][3]. var_cl3[5].val = 	array_2[2][3][4]; // =>
+
+	class_var.cl3.val = (class_var.array_var1[10][5].func2(l[9]) * class_var.array_var1[10][5].func2(cc[5][2]) + array_2[1][1][1]) / array_var3[2][3]. var_cl3[5]. function1(k, l[1]);
+
+	k = var.function1(class_var.a,  array_var2[1][1 + a].a +   (class_var.array_var1[10][5].func2(l[9]) * class_var.array_var1[10][5].func2(cc[5][2]) + array_2[1][1][1]) / array_var3[2][3]. var_cl3[5]. function1(k, l[1])  ); //expression as a parameter
+
+	//---------------nestes <if>s---------------
+	if(		var.function1(class_var.a,  array_var2[1][1 + a].a +   (class_var.array_var1[10][5].func2(l[9]) * class_var.array_var1[10][5].func2(cc[5][2]) + array_2[1][1][1]) / array_var3[2][3]. var_cl3[5]. function1(k, l[1])  )
+		<>
+		var.function1(class_var.a,  array_var2[1][1 + a].a +   (class_var.array_var1[10][5].func2(l[9]) * class_var.array_var1[10][5].func2(cc[5][2]) + array_2[1][1][1]) / array_var3[2][3]. var_cl3[5]. function1(k, l[1])  )
+
+		) then 
+
+		if (	free_func2(array_var3[2][3].a, array_var3[2][2]) == 2.004/ free_func2(array_var3[2][3].a, array_var3[2][2])	) then
+
+			tt =  var.function1(class_var.a,  array_var2[1][1 + a].a +   (class_var.array_var1[10][5].func2(l[9]) * class_var.array_var1[10][5].func2(cc[5][2]) + array_2[1][1][1]) / array_var3[2][3]. var_cl3[5]. function1(k, l[1])  ) ;
+		else 
+			kk =  free_func2(array_var3[2][3].a, array_var3[2][2]); ;
+	else {
+		put(	 var.function1(class_var.a,  array_var2[1][1 + a].a +   (class_var.array_var1[10][5].func2(l[9]) * class_var.array_var1[10][5].func2(cc[5][2]) + array_2[1][1][1]) / array_var3[2][3]. var_cl3[5]. function1(k, l[1])  ) );
+		kk =  free_func2(array_var3[2][3].a, array_var3[2][2]);
+		// complex expression within indice 		
+		if(var.function1(class_var.a,  array_var2[   array_var3[2][3]. var_cl3[5]. function1(k, l[1]) ][1 + a].a )
+			<
+			var.function1(class_var.a,  array_var2[1][1 + a].a and -2) )
+			then 
+			get(a);
+		else
+			get(kk);;
+	};
+
+	//----------------------------------------
+
+};
+
+CL3 free_func1(){
+	CL1 obj_cl1;
+	CL3 obj_cl3;
+	CL2 obj_cl2;
+	int a ;
+	obj_cl3 =  obj_cl1.func6(obj_cl2); // return object type
+	//	 a = obj_cl1.func6(obj_cl2);  // object to integer
+
+
+	return(obj_cl3);
+
+};
+
+float free_func2(int a, CL2 array_var1){
+
+	int b; // scope variable
+	int c; // scope variable
+	int arr[1][2][3];
+	CL2 array_var2[2][4];
+	CL3 var;
+	CL2 class_var;
+
+	c = var.function1(array_var2[1][1 + a].a + array_var2[1][1].a + arr[1][2][1], array_var2[1][1 + a].a + b);
+
+	////c = array_var2[1][1 + a].a + 2.9 * 0.003; // float int mixed
+	//array_var2[1][1 + a].a = c + b + array_var2[1][1 + a]; //member variable is missing
+};
+
+int free_func3(int k){
+	return(k+1);
+};

@@ -1,0 +1,135 @@
+Enter file name to scan:
+C:\Users\vika\Desktop\HarutyunyanCompilerAss3\files\sourceFile.cpp
+.\files\Assignment2\Syntax\RULLS.txt
+.\files\Assignment2\Syntax\FIRST.txt
+.\files\Assignment2\Syntax\FOLLOW.txt
+.\files\Assignment2\Syntax\FIRSTFOLLOW.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+SEMERR#1:       Undeclared identifier on line# 11 : i
+
+SEMERR#1:       Undeclared identifier on line# 11 : j
+
+SEMERR#1:       Undeclared identifier on line# 12 : j
+
+SEMERR#10:      Wrong number of indices  on line# 15:   cde=> 2 dimentions are required
+
+SEMERR#5:               Invalid parameter list on line# 15      :returnObj      1 parameters are required
+SEMERR#5:               Invalid parameter list on line# 16      :returnObj      1 parameters are required
+SEMERR#11:      Multiply declared identifier on  line# 20: i
+SEMERR#13:      Invalid type for loop variable on line# 21integer type is required as a loop parameter
+SEMERR#1:       Undeclared identifier on line# 21 : k
+
+SEMERR#1:       Undeclared identifier on line# 21 : k
+
+SEMERR#1:       Undeclared identifier on line# 21 : k
+
+
+Symbol table for: func1 on line# 10
+        int func1(){
+                int i;
+                int j;
+        };
+
+
+Symbol table for: function_float on line# 31
+        int function_float(float a, float b){
+        };
+
+
+Symbol table for: convert on line# 35
+        int convert(float k){
+                int a;
+        };
+
+SEMERR#17:      Invalid Function Parameter type on line# 47:  array can not be a function parameter
+
+SEMERR#1:       Undeclared identifier on line# 49 : b
+
+SEMERR#1:       Undeclared identifier on line# 49 : b
+
+SEMERR#5:       Invalid parameter list on line# 49: function_float =>Invalid number of parameters =>2 parameters are required
+SEMERR#1:       Undeclared identifier on line# 49 : b
+
+SEMERR#1:       Undeclared identifier on line# 49 : b
+
+SEMERR#1:       Undeclared identifier on line# 49 : b
+
+SEMERR#1:       Undeclared identifier on line# 49 : b
+
+SEMERR#1:       Undeclared identifier on line# 50 : b
+
+SEMERR#5:       Invalid parameter list on line# 50: function_float =>Invalid number of parameters =>2 parameters are required
+
+Symbol table for: returnObj on line# 47
+        int returnObj(int a){
+                int i;
+                int j;
+        };
+
+SEMERR#15:      Not an Array on line# 62 :<a> is not an array
+SEMERR#5:               Invalid parameter list on line# 62      :returnObj      1 parameters are required
+
+SEMERR#7:       Assignment Type mismatch on line# 63 : int is required
+SEMERR#5:               Invalid parameter list on line# 65      :returnObj      1 parameters are required
+SEMERR#6:       Type mismatch on line# 69. Parameters of the same type are expected
+
+
+SEMERR#7:       Assignment Type mismatch on line# 71 : int is required
+
+Symbol table for: free_func1 on line# 76
+        int free_func1(){
+                int a;
+                int b [2][6];
+                BCD bcd;
+                float c;
+                float d;
+                int i;
+                int j;
+        };
+
+
+
+----------Output for global scope-------
+class ABC{
+        float b [10];
+        BCD bcd;
+        CDE cde [10][10];
+        CDE cde2;
+        int func1();
+};
+class BCD{
+        int convert(float k);
+        int function_float(float a, float b);
+};
+class CDE{
+        int a;
+        BCD bcd;
+        float c;
+        float d;
+        int returnObj(int a);
+};
+        int free_func1();
+program{
+        int a;
+        ABC abc;
+        float c;
+        CDE cde;
+        float d;
+        int i;
+        int k;
+        int p;
+};
+----------------------------------------
+
+
+file parsing is finished
+----------------------------------------
+0 ERROR:s
+0 CASCADING ERRORS:s
+26 SEMANTIC ERROR:s

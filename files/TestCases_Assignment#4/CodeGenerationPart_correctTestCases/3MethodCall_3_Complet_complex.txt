@@ -1,0 +1,129 @@
+// method calls 
+// nested classes
+//arrays as a function parameters
+
+
+class AAA{
+
+	int aaa; //there are many variable that are not used to show that memory momputation for arrays and classes are correct
+	int aaa1;
+	BBB bbb;
+	int aaa2;
+	int array_a_member[4][4];
+	int func_A(int a, int array_a[4][4]){ //reseives an array from outside, changes value of its member array  ///<<<STEP1
+		int result;
+		result = 0;
+		for(int i = 0; i <=3; i = i+1){
+			for(int j = 0; j <=3; j = j+1)
+				array_a_member[i][j] =    array_a[i][j] +  a;; // i + j + a = > where a = 2
+		};
+
+		result = func_computeSum( a); // calls memeber function of class <AAA> = to compute // STEP2
+
+		return(result);
+	};
+
+	int func_computeSum(int a){
+		int sum;
+		int res;
+		sum = 0;
+		
+		sum = bbb.func_B(a, array_a_member); // calls member function of nested class <BBB>// STEP 3 
+		return(sum);
+	};
+
+	int init_A( int array_int[3], DDD obj_d, CCC obj_c){
+	int res;
+	res = bbb.init_b(array_int, obj_d, obj_c);
+	
+	};
+
+};
+
+class BBB{
+
+	int bbb;
+	int bbb1;
+	CCC ccc;
+	DDD ddd;
+	int bbb2;
+
+	int func_B(int b , int array_b[4][4] ){  // reseives an array and computes its size // STEP4
+		int sum;
+		sum = 0;
+		for (int i = 0; i <=3; i = i+1)
+			for( int j =0; j <=3; j = j+1 )
+				sum = sum + array_b[i][j];;;
+
+		return(sum + b); // =========================>>>>>    result = 80 + 2
+	};
+
+	int init_b(int init_array[3], DDD obj_d, CCC obj_c){ // initialize <BBB>
+		int res;
+		bbb = init_array[0];
+		bbb1 = init_array[1];
+		bbb2 = init_array[2];
+
+		res = ddd.init_D(obj_d); // initialize <DDD>
+		res = ccc.init_C(init_array[0], init_array[1], obj_d); // initialize <CCC>
+		put(bbb2); // ========>>>>> output is <3>
+		put(0);
+		put(ccc.ddd.ddd); // names are the same by purpose <<<<====  output <11>
+
+	};
+
+};
+
+class CCC{
+	int ccc;
+	int ccc1;
+	DDD ddd;
+	int init_C(int c, int c1, DDD d){  // initialization for class CCC
+		int result;
+	ccc = c;
+	ccc1 = c1;
+	
+	result  = ddd.init_D( d);
+	//put(ccc + ccc1 + ddd.ddd);
+	};
+
+
+};
+
+class DDD{
+	int ddd;
+	int init_D(DDD d){
+		ddd = d.ddd;
+		//put(d.ddd);
+		return(1);
+
+	};
+
+};
+
+program{
+int c;
+int c1;
+int result;
+int array_init[3];
+int array_Computation[4][4];
+CCC c_object;
+DDD d_object;
+AAA a_obj;
+
+d_object.ddd = 11;
+c = 21;
+c1 = 31;
+for(int k = 0; k <= 2; k = k+1)
+	array_init[k] = 1 + k;;
+
+result = c_object.init_C(c, c1 , d_object);  // <<== initialize 
+result = a_obj.init_A( array_init, d_object, c_object); // <<== initialise
+
+for(int i = 0; i <=3; i = i+1)
+	for(int j = 0; j<= 3; j = j+1)
+		array_Computation[i][j] = i + j;;;
+
+put(a_obj.func_A( 2, array_Computation)); //<<= process and output <<<<==== <82>
+
+};

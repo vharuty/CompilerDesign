@@ -1,0 +1,14 @@
+// this file is to check some 
+// epsilon rules => class, function, prog
+
+class MyClassName{
+
+};
+
+program {
+
+};
+
+int myFunction(){
+
+};

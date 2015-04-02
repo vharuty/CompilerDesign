@@ -1,0 +1,71 @@
+// multipely defined variables
+
+
+class AAA{
+	int a;
+	int a;
+
+	BBB bbb1;
+	BBB bbb1;
+
+	float  memFunc(float val1,int val1, int val2){ // multipley defined variable
+
+		return( val2);
+
+	};
+
+};
+
+class BBB{
+	int a;
+	int b;
+	float  memFunc(float val1, float val2){ // multipley defined methof 
+		int val2; // multipely defined
+
+		return(val1 + val2);
+
+	};
+}; 
+
+program{
+
+
+};
+
+int free_func( int a, float b, float a){ // multipely defined parameter
+	int value;
+	int arr_1[5][5];
+	int ar_1; // multipely defined
+	value = a;
+	return(value);
+
+};
+
+float unique(float arr[3][3], int i){
+
+	for(int i = 0; i <= 2; i = i + 1)
+		arr[1][i] = 0;;
+	return(arr[1][1]);
+};
+
+
+// Error output
+
+/*
+
+
+SEMERR#11:	Multiply declared identifier on the line# 6: a
+SEMERR#11:	Multiply declared identifier on the line# 9: bbb1
+SEMERR#11:	Multipely declared identifier on line# 11 : val1
+
+SEMERR#8:	Invalid return type for function  <memFunc>  on line#  13	is expected <float>
+
+SEMERR#11:	Multiply declared identifier on the line# 23: val2
+SEMERR#11:	Multipely declared identifier on line# 35 : a
+SEMERR#11:	Multiply declared identifier on  line# 46: i
+
+SEMERR#7:	Assignment Type mismatch on line# 47 : float is required
+
+
+
+*/

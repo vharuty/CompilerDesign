@@ -1,0 +1,46 @@
+//class contains only function deffinition
+// funk1 => contains only variable declaration
+// funk2=> contains only statements
+//<program> contains only variable declaration
+
+
+class MyClass{
+	
+int funk1(int a, float b ){
+		MyClass1 var5[10][20] ;
+		int abc;
+		float bcd;
+
+	};
+float funk2(){
+
+			get( i );
+	get(MyClassName.var1.param[10].var2);
+	put( 10 );
+	put( myClassFunction2(  ) + 10 );
+	put( myClassFunction1( 12.8 ) + 10 );
+	return ( myClassFunction1( myClassName1.var1() ) + 10 );
+	return(-20); // to check sign factor
+	put(not - 20); // to check sign not factor
+	abc = funk1(a,b);
+
+
+	};
+
+
+};
+
+program {
+
+	
+	
+		MyClass1 var5[10][20] ;
+		int abc;
+		float bcd;
+	
+	
+	  } ;
+
+
+
+

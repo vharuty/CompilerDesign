@@ -1,0 +1,24 @@
+
+Symbol table for: search on line# 29
+	int search(int data [10], int toFind, int count){
+	};
+
+
+Symbol table for: binary_search on line# 48
+	int binary_search(int data [10], int toFind, int start, int end){
+		int mid;
+	};
+
+
+
+----------Output for global scope-------
+	int binary_search(int data [10], int toFind, int start, int end);
+program{
+	int array [10];
+	int i;
+	int k;
+};
+	int search(int data [10], int toFind, int count);
+----------------------------------------
+
+

@@ -1,0 +1,27 @@
+
+Symbol table for: func on line# 7
+	CCC func(int a, int b){
+		CCC cc;
+	};
+
+
+Symbol table for: free_func on line# 25
+	int free_func(int a, int b){
+	};
+
+
+
+----------Output for global scope-------
+class AAA{
+	int aaa;
+	int bbb;
+	CCC func(int a, int b);
+};
+class CCC{
+};
+	int free_func(int a, int b);
+program{
+};
+----------------------------------------
+
+

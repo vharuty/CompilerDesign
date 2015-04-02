@@ -1,0 +1,78 @@
+// this file is to check some additional  epsilon rules 
+// <myClassFunction1> contains no varable declaration block , it contains only statment block
+// <myClassFunction2> contains only variable declarationblock => no statments
+// file also shows how different types of expressios/parameters are possible for different statement
+// more complex variations are in other testcases
+
+// NOTE THAT STATEMENTS ARE MIXED BY PURPOSE
+
+class MyClassName{
+
+
+int myClassFunction( float param1 ){
+
+// statments list starts
+
+	if(a == b)
+ 	then
+ 	else;
+
+
+	
+	for( int i =1; i < 10; i = i + 1);
+	
+	get( i );
+	get(MyClassName.var1.param[10].var2);
+	put( 10 );
+	put( myClassFunction2(  ) + 10 );
+	put( myClassFunction1( 12.8 ) + 10 );
+	return ( myClassFunction1( myClassName1.var1() ) + 10 );
+	return(-20); // to check sign factor
+	put(not - 20); // to check sign not factor
+	
+	// assignment statement
+	a = b + c;
+	a = a[8][10].b[10].c.d.function();
+	x[10].a.b.c.y[10][11][12].d 	=	a[8][10].b[10].c.d.function();
+	x[10].a.b.c.y[10][11][12].d 	=	a[8][10].b[10].c.d.function( myClassFunction2(  ) + 10, myClassFunction1( myClassName1.var1() ) + 10);
+
+	
+	if(a == b) 
+	then{}
+	else{};
+
+	for( int i =1; i < 10; i = i + 1){	};
+
+	put( myClassFunction1( 15 ) + 10 );
+	put( myClassFunction1( 15 ) + 10 );
+	put(  myClassName1.var1 + 10 );
+
+	put( myClassFunction1( myClassName1.var1() ) + 10 );
+
+
+};	// myClassFunction2 ends
+
+
+int myClassFunction2(  ){
+
+//variable declaration showes that different typ of variable can be defined mixed 
+
+	int ab;
+	float bc;
+	myClassFunction1 adcd[1][2][3];
+	int bbc[2]; 
+	float bcde;
+
+
+};	// myClassFunction2 ends
+
+
+};	// MyClassName ends
+
+program {
+
+};
+
+int myFunction(){
+
+};

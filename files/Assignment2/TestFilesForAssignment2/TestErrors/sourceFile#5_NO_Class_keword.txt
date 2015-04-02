@@ -1,0 +1,149 @@
+// this file is to check how the syntax analyzer behaves in critical situation 
+// for example when a sours file has no 'class' or 'program'
+// It is to show that even when one of the main key words is missing, the rest of the file is compiled properly 
+// and there are no cascading errors 
+
+// this particular file has no 'class'
+
+
+
+{  // missing  'class MyClass1 '
+
+int function1(  )  
+{ 
+	 
+} ; 
+
+MyClass1 function2 ( ){ 
+	for ( int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8 ) 
+		for ( float j  = 12 ; 	ab <> bc  ; abc.bcd[20].abc = 13 <> 12.8 ) ; ;  
+};
+
+ } ;  // end MyClass1
+
+
+
+ MyClass2 {  // 'class' is missing 
+
+
+int Var1  ;
+int Var2[20] ;
+int Var3 [20][6][10][5] ;
+float var4;
+MyClass2 var5[20][20][2];
+
+int MyFunk1 ( int param1 , MyClass param2[20][20], float param2[10] ) { 
+
+	
+	MyClass1 var5[10][20] ;
+
+	MyClass1 var6;
+
+	int var7; 
+
+	MyClass2.var3[ 20][ 10][ 10].var1 = ( 20 * not + 20 ) * 10 + abc.bcd[20][10].abc ( 20 == 10  ) * factor   + ( 20.8) * 15 +not 20   <>  20 * 20.5 ;
+	
+	MyClass2.var5.var2[ 20 * 5].var5 	=  20 ;
+	id =  10 ;
+for (int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) ;
+
+	for (int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) 
+		for ( int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) ; ;
+	for ( int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) 
+		for ( float i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8 ) 
+			for ( MyClass i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) 
+				{ 
+					if ( ( 20 * not + 20 ) * 10 + abc.bcd[20][10].abc ( 20 == 10  ) * 20+ ( 20.8) * 15 +not 20   <>  20 * 20.5  ) then 
+						for ( MyClass i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8 ) {
+							get ( MyClass.vatr1[20].abc.bcd) ;
+							put ( ( 20 * not + 20 ) * 10 + abc.bcd[20][10].abc ( 20 == 10  ) * 20+ ( 20.8) * 15 +not 20   <>  20 * 20.5  ) ;
+						} ; 
+					else 
+						if ( ( 20 * not + 20 ) * 10 + abc.bcd[20][10].abc ( 20 == 10  ) * 20+ ( 20.8) * 15 +not 20   <>  20 * 20.5  ) then 
+							put ( ( 20 * not + 20 ) * 10 + abc.bcd[20][10].abc ( 20 == 10  ) * 20+ ( 20.8) * 15 +not 20   <>  20 * 20.5  ) ; 
+						else 
+							put ( ( 20 * not + 20 ) * 10 + abc.bcd[20][10].abc ( 20 == 10  ) * 20+ ( 20.8) * 15 +not 20   <>  20 * 20.5  ) ; ;  ;	
+  
+
+				}; ; ; 
+	 
+} ; 
+
+
+float MyFunk2 ( int param1 , MyClass param2[20][20], float param2[10][10][10][10], int param2[10] ) { 
+
+	MyClass1.Var7[ 20 ]  =  ( 20 * not + 20 ) * 10 + abc.bcd[20][10].abc ( 20 == 10  ) * 20+ ( 20.8) * 15 +not 20   <>  20 *20.5  ; 
+	
+	get ( a[10][20][21]) ; 
+	bs[12].bcd[20].abc	 =	( 20 * not + 20 ) * 10 + abc.bcd[20][10].abc ( 20 == 10  ) * 20+ ( 20.8) * 15 +not 20   <>  20 * 20.5  ;
+	for ( MyClass i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8 ) {
+		get ( bs[12].bcd[20].abc ) ;
+		put ( 10 ) ;
+		if ( 10 ) then 
+			put ( 10 ) ; 
+		else 
+			put ( 10 ) ;;
+	} ;
+	
+	return ( 10 ) ; 
+
+} ; 
+
+
+
+
+
+myClass3 MyFunk3 ( float param2[10] ) {
+
+};
+
+} ; 
+
+
+
+
+ program {	// program starts
+
+	
+	MyClass1 var5[10][20] ;
+	MyClass1 var6;
+	int var7; 
+	
+	for (int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) 
+		for ( int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) ; ;
+	
+} ;	// end program 
+
+
+/* free function linst starts  */
+
+MyClass1 function2 ( ){ 
+	for ( int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8 ) 
+		for ( float j  = 12 ; 	ab <> bc  ; abc.bcd[20].abc = 13 <> 12.8 ) ; ;  
+};
+
+myClass3 MyFunk3 ( float param2[10] ) {
+	
+};
+
+float MyFunk2 ( int param1 , MyClass param2[20][20], float param2[10][10][10][10], int param2[10] ) { 
+
+	MyClass1.Var7[ 20 ]  =  ( 20 * not + 20 ) * 10 + abc.bcd[20][10].abc ( 20 == 10  ) * 20+ ( 20.8) * 15 +not 20   <>  20 *20.5  ; 
+	
+	get ( a[10][20][21]) ; 
+	bs[12].bcd[20].abc	 =	( 20 * not + 20 ) * 10 + abc.bcd[20][10].abc ( 20 == 10  ) * 20+ ( 20.8) * 15 +not 20   <>  20 * 20.5  ;
+	for ( MyClass i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8 ) {
+		get ( bs[12].bcd[20].abc ) ;
+		put ( 10 ) ;
+		if ( 10 ) then 
+			put ( 10 ) ; 
+		else 
+			put ( 10 ) ;;
+	} ;
+	
+	return ( 10 ) ; 
+
+} ; 
+
+
+

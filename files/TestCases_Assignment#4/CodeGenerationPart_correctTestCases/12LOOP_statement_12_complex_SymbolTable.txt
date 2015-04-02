@@ -1,0 +1,35 @@
+
+Symbol table for: free_funct_compute on line# 95
+	int free_funct_compute(){
+		int arr_1 [10][10];
+		int big;
+		int even_count;
+		int i;
+		int j;
+		int k;
+		int l;
+		int odd_count;
+		int small;
+	};
+
+
+
+----------Output for global scope-------
+	int free_funct_compute();
+program{
+	int arr_1 [10][10];
+	int big;
+	int even_count;
+	int i;
+	int j;
+	int k;
+	int l;
+	int odd_count;
+	int p;
+	int small;
+	int value_col;
+	int value_line [10];
+};
+----------------------------------------
+
+

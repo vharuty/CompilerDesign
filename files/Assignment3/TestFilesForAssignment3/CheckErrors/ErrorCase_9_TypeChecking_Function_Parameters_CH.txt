@@ -1,0 +1,90 @@
+// error cases of function parameter type checking
+//error cases number of parameters checking, return type
+//simple cases
+
+class ABC{
+	BCD bcd;
+	CDE cde;
+	float func1(float a, int b, BCD c){
+		if( a<1.1 ) then
+			return (a * bcd.func1()/2); // invalid retun type
+		else 
+			return(2.2*a + cde.func1(a, 2.2*a, a) );; //functrion has 2 parameter
+
+	};
+
+	int func2(){
+
+	};
+};
+
+class BCD{
+	int int_value;
+	float returnValue;
+
+	float func1(){
+		int_value = 2;
+		returnValue = 0.002;
+		if(returnValue <> 0.02)
+			then
+		return(int_value); // invalid return type
+		else
+			return((returnValue  + returnValue* 0.03) - int_value);; // invalid return value 
+	};
+
+};
+
+class CDE{
+	int a;
+	float func1(float a, float b){
+
+		return(a + b);
+	};
+
+	int convert(float a){
+		int c;
+		return(a);
+	};
+
+	int func_array(int array1[1][1], int k){ // array can not be a function parameter
+		int a;
+		if(a==1) then
+			return(array1[1][1] * k/a);
+		else
+			return(k/a);;
+	};
+
+};
+
+program{
+	CDE cde;
+	BCD bcd;
+	float a;
+	float b;
+	int c;
+	c = free_funct2( free_funct(  a,  b),  free_funct(  a,  b));
+	a = cde.func1(a * 2.6, b) + bcd.func1(a,b); // function has no parameters
+
+	//needs float type parameter
+	c = free_funct2( free_funct(  a,  c),  free_funct(  a,  b), 3.9); //<free_funct2> has 2 parameters
+	b = free_funct( c,  b); // invalid parameter type 
+	b  = free_funct( ); // missing parameters
+
+};
+
+int free_funct( float a, float b){ // receives float, returns integer
+	CDE cde;
+	cde.a =  free_funct2( cde.convert(a), cde.convert(b));
+
+};
+
+int free_funct2(int a, int b){ //receives integer
+	CDE cde;
+	int k;
+	float foltVal;
+	a = cde.func_array( b,  k);
+	a = cde.func_array(  k); // is recognised correct function call => check document
+	a = cde.func_array( foltVal);// int is required
+	return(a * b);
+
+};

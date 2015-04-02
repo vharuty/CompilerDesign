@@ -1,0 +1,24 @@
+//class contains only variable declaration
+// program contains only statements
+
+class MyClass{
+
+		MyClass1 var5[10][20] ;
+		int abc;
+		float bcd;
+
+};
+
+program {
+
+	
+
+	
+	for (int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) 
+		for ( int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) ; ;
+	
+	  } ;
+
+
+
+

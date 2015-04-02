@@ -1,0 +1,17 @@
+
+
+----------Output for global scope-------
+program{
+	int array_1 [4];
+	int array_2 [4][4];
+	int array_3 [4][4][4];
+	int array_4 [4][4][4][4];
+	int i;
+	int j;
+	int k;
+	int l;
+	int result;
+};
+----------------------------------------
+
+

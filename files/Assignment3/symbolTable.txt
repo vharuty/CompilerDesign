@@ -1,0 +1,47 @@
+
+Symbol table for: f1 on line# 7
+	int f1(cl1 par1, float par2){
+		cl3 par3;
+	};
+
+
+Symbol table for: f2 on line# 13
+Function 'f2' on line# 13 is ignored because of an error on its' decalaration=>
+scope is not printed
+
+Symbol table for: fff2 on line# 23
+	int fff2(){
+	};
+
+
+Symbol table for: free_f1 on line# 41
+	ABC free_f1(int a){
+		int i;
+	};
+
+
+Symbol table for: free_2 on line# 49
+Function 'free_2' on line# 49 is ignored because of an error on its' decalaration=>
+scope is not printed
+
+
+----------Output for global scope-------
+class ABC{
+	BCD bcd;
+	int f1(cl1 par1, float par2);
+	BCD f2();
+};
+class CCC{
+	int fff2();
+};
+	BCD free_2();
+	ABC free_f1(int a);
+program{
+	int a;
+	ABC abc;
+	myClass c1 [10];
+	CCC c_class;
+};
+----------------------------------------
+
+

@@ -1,0 +1,116 @@
+Enter file name to scan:
+C:\Users\vika\Desktop\HarutyunyanCompilerAss3\files\sourceFile.cpp
+.\files\Assignment2\Syntax\RULLS.txt
+.\files\Assignment2\Syntax\FIRST.txt
+.\files\Assignment2\Syntax\FOLLOW.txt
+.\files\Assignment2\Syntax\FIRSTFOLLOW.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+SEMERR#6:       Type mismatch on line#  10:     parameters of the same type are rquired
+SEMERR#5:               Invalid parameter list on line# 12      :func1  2 parameters are required
+
+Symbol table for: func1 on line# 8
+        float func1(float a, int b, BCD c){
+        };
+
+
+Symbol table for: func2 on line# 16
+        int func2(){
+        };
+
+
+SEMERR#8:       Invalid return type for function  <func1>  on line#  30 is expected <float>
+
+SEMERR#6:       Type mismatch on line#  32:     parameters of the same type are rquired
+
+Symbol table for: func1 on line# 25
+        float func1(){
+        };
+
+
+Symbol table for: func1 on line# 39
+        float func1(float a, float b){
+        };
+
+
+SEMERR#8:       Invalid return type for function  <convert>  on line#  46       is expected <int>
+
+
+Symbol table for: convert on line# 44
+        int convert(float a){
+                int c;
+        };
+
+SEMERR#17:      Invalid Function Parameter type on line# 49:  array can not be a function parameter
+
+SEMERR#1:       Undeclared identifier on line# 52 : array1
+
+
+Symbol table for: func_array on line# 49
+        int func_array(int k){
+                int a;
+        };
+
+SEMERR#5:               Invalid parameter list on line# 66      :func1  0 parameters are required
+SEMERR#9:       Function parameter type missmatch on line# 69 => float is required in function free_funct
+SEMERR#9:       Function parameter type missmatch on line# 69 => int is required in function free_funct2
+SEMERR#9:       Function parameter type missmatch on line# 70 => float is required in function free_funct
+SEMERR#5:       Invalid parameter list on line# 71: free_funct =>Invalid number of parameters =>2 parameters are required
+
+Symbol table for: free_funct on line# 75
+        int free_funct(float a, float b){
+                CDE cde;
+        };
+
+SEMERR#5:               Invalid parameter list on line# 85      :func_array     1 parameters are required
+SEMERR#9:       Function parameter type missmatch on line# 87 => int is required in function func_array
+
+Symbol table for: free_funct2 on line# 81
+        int free_funct2(int a, int b){
+                CDE cde;
+                float foltVal;
+                int k;
+        };
+
+
+
+----------Output for global scope-------
+class ABC{
+        BCD bcd;
+        CDE cde;
+        float func1(float a, int b, BCD c);
+        int func2();
+};
+class BCD{
+        float func1();
+        int int_value;
+        float returnValue;
+};
+class CDE{
+        int a;
+        int convert(float a);
+        float func1(float a, float b);
+        int func_array(int k);
+};
+        int free_funct(float a, float b);
+        int free_funct2(int a, int b);
+program{
+        float a;
+        float b;
+        BCD bcd;
+        int c;
+        CDE cde;
+};
+----------------------------------------
+
+
+file parsing is finished
+----------------------------------------
+0 ERROR:s
+0 CASCADING ERRORS:s
+13 SEMANTIC ERROR:s

@@ -1,0 +1,41 @@
+
+Symbol table for: memFunc on line# 7
+	int memFunc(float val1, int val2){
+	};
+
+
+Symbol table for: memFunc on line# 12
+Function 'memFunc' on line# 12 is ignored because of an error on its' decalaration=>
+scope is not printed
+
+Symbol table for: free_func on line# 41
+	int free_func(int a, float b){
+		int value;
+	};
+
+
+Symbol table for: unique on line# 48
+	float unique(float arr [3][3]){
+	};
+
+
+Symbol table for: free_func on line# 52
+Function 'free_func' on line# 52 is ignored because of an error on its' decalaration=>
+scope is not printed
+
+
+----------Output for global scope-------
+class AAA{
+	int memFunc(float val1, int val2);
+};
+class BBB{
+	int a;
+	int b;
+};
+	int free_func(int a, float b);
+program{
+};
+	float unique(float arr [3][3]);
+----------------------------------------
+
+

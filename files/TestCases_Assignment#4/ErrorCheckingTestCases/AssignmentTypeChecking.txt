@@ -1,0 +1,52 @@
+// type checking expressions
+// include float and int mixed
+// logical operators mixed with arithmetic operator 
+
+class AAA{
+int a; int b;
+
+};
+
+program{
+int a;
+int b;
+float c;
+float cc;
+int d;
+int array_[3][3];
+AAA aaa_obj;
+
+c =  a + b or a + b and not a; // c is float, the exppression is int 
+c = 2.4;
+
+c = 2.2 * c +  cc and not - c; // no semantic error
+
+b = 2.2 * c +  cc and not(- c) and c or 2.2; // b is int the expresiion is float 
+
+array_ = a + b or a + b and not a;// assignment is not defined for arrays
+
+a = a + b or a + b and not a  + array_ ; // can't use array in an expression
+aaa_obj = a + b or a + b and not a; // assignment is not defined for objects
+
+a = a + b or a + b and not a + aaa_obj ; // type missmatch => we can't use entire object within the expressin
+
+};
+
+
+// error messages
+/*
+
+
+SEMERR#7:       Assignment Type mismatch on line# 19 : float is required
+
+SEMERR#7:       Assignment Type mismatch on line# 24 : int is required
+SEMERR#20:      Invalid operation on line# 26
+ => Assignment operation is not defined for arrays
+SEMERR#21:      Invalid  opperation on line#    28:     Arithmetic operations are not defined on arrays
+
+SEMERR#7:       Assignment Type mismatch on line# 28 : int is required
+SEMERR#20:      Invalid operation on line#  29 => Assignment operation is defined only for <int> and <float>
+SEMERR#6:       Type mismatch on line#  31:     parameters of the same type are rquired
+file parsing is finished
+
+*/

@@ -1,0 +1,24 @@
+SEMERR#12:	Undefined identifier on line# 6 : BCD
+SEMERR#12:	Undefined identifier on line# 7 : cl1
+SEMERR#1:	Undeclared identifier on line# 8 : cl3
+
+SEMERR#12:	Undefined identifier on line# 8 : cl3
+SEMERR#20:	Invalid operation on line#  10 => Assignment operation is defined only for <int> and <float>
+SEMERR#6:	Type mismatch on line#	10:	parameters of the same type are rquired
+SEMERR#1:	Undeclared identifier on line# 13 : BCD
+SEMERR#1:	Undeclared identifier on line# 32 : myClass
+
+SEMERR#12:	Undefined identifier on line# 32 : myClass
+SEMERR#1:	Undeclared identifier on line# 36 : abc
+SEMERR#20:	Invalid operation on line#  36 => Assignment operation is defined only for <int> and <float>
+SEMERR#1:	Undeclared identifier on line# 37 : f_doesNotExist
+
+SEMERR#1:	Undeclared identifier on line# 38: f2
+SEMERR#1:	Undeclared identifier on line# 43 : j
+
+SEMERR#1:	Undeclared identifier on line# 43 : k
+
+SEMERR#20:	Invalid operation on line#  43 => Assignment operation is defined only for <int> and <float>
+SEMERR#1:	Undeclared identifier on line# 43 : k
+
+SEMERR#1:	Undeclared identifier on line# 49 : BCD

@@ -1,0 +1,29 @@
+program{
+int a;
+int b;
+int c;
+int d;
+
+a = 10;
+b = 2;
+c = 10;
+
+a = a + b > 3 /c*d;
+if(a > b + c)
+	then
+	put(a);
+else 
+	put(b);;
+put(a);
+
+
+};
+
+
+/* error output*/
+/* 
+
+SEMERR#7:       Assignment Type mismatch on line# 11 : int is required
+file parsing is finished
+
+*/

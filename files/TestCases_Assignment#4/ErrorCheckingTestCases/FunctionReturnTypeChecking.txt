@@ -1,0 +1,41 @@
+//Function  return type checking
+
+class AAA{
+int aaa;
+int bbb;
+
+CCC func(int a, int b){
+	CCC cc;
+	return(cc); // invalid return type
+};
+
+};
+
+class CCC{
+
+
+};
+
+program{
+
+
+
+};
+
+int free_func(int a, int b){ // invalid return type => function is of a type int
+float b;
+
+return(b);
+
+};
+
+
+/*     output of errors */
+/*
+
+
+SEMERR#8:       Invalid return type on line#  9 for func function can return only <int> or <float>
+SEMERR#11:      Multiply declared identifier on the line# 26: b
+file parsing is finished
+
+*/

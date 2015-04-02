@@ -1,0 +1,85 @@
+Enter file name to scan:
+C:\Users\vika\Desktop\HarutyunyanCompilerAss3\files\sourceFile.cpp
+.\files\Assignment2\Syntax\RULLS.txt
+.\files\Assignment2\Syntax\FIRST.txt
+.\files\Assignment2\Syntax\FOLLOW.txt
+.\files\Assignment2\Syntax\FIRSTFOLLOW.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+
+Symbol table for: func1 on line# 8
+        float func1(float a, int b, BCD c){
+        };
+
+
+Symbol table for: func2 on line# 16
+        int func2(){
+        };
+
+
+Symbol table for: func1 on line# 24
+        float func1(){
+        };
+
+
+Symbol table for: func1 on line# 33
+        float func1(float a, float b){
+        };
+
+
+Symbol table for: convert on line# 38
+        int convert(float a){
+                int c;
+        };
+
+
+Symbol table for: free_funct on line# 55
+        int free_funct(float a, float b){
+                CDE cde;
+        };
+
+
+Symbol table for: free_funct2 on line# 61
+        int free_funct2(int a, int b){
+        };
+
+
+
+----------Output for global scope-------
+class ABC{
+        BCD bcd;
+        CDE cde;
+        float func1(float a, int b, BCD c);
+        int func2();
+};
+class BCD{
+        float func1();
+        float returnValue;
+};
+class CDE{
+        int a;
+        int convert(float a);
+        float func1(float a, float b);
+};
+        int free_funct(float a, float b);
+        int free_funct2(int a, int b);
+program{
+        float a;
+        float b;
+        BCD bcd;
+        int c;
+        CDE cde;
+};
+----------------------------------------
+
+
+file parsing is finished
+----------------------------------------
+0 ERROR:s
+0 CASCADING ERRORS:s
+0 SEMANTIC ERROR:s

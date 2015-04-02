@@ -1,0 +1,189 @@
+Enter file name to scan:
+C:\Users\vika\Desktop\HarutyunyanCompilerAss3\files\sourceFile.cpp
+.\files\Assignment2\Syntax\RULLS.txt
+.\files\Assignment2\Syntax\FIRST.txt
+.\files\Assignment2\Syntax\FOLLOW.txt
+.\files\Assignment2\Syntax\FIRSTFOLLOW.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+SEMERR#10:      Wrong number of indices  on line# 13:   ar=> 2 dimentions are required
+
+SEMERR#10:      Wrong number of indices  on line# 15:   array_var1=> 2 dimentions are required
+
+SEMERR#5:               Invalid parameter list on line# 19      :function1      2 parameters are required
+SEMERR#10:      Wrong number of indices  on line# 21:   array_var1=> 2 dimentions are required
+
+SEMERR#6:       Type mismatch on line#  25:     parameters of the same type are rquired
+
+SEMERR#8:       Invalid return type for function  <func1>  on line#  28 is expected <CL3>
+
+
+Symbol table for: func1 on line# 10
+        CL3 func1(CL2 var){
+                int b;
+                int c;
+        };
+
+SEMERR#5:       Invalid parameter list on line# 34: func1 =>Invalid number of parameters =>1 parameters are required
+
+Symbol table for: func2 on line# 31
+        int func2(){
+                int returnVal;
+        };
+
+
+Symbol table for: func2 on line# 45
+        int func2(int a){
+                int returnVal;
+        };
+
+
+Symbol table for: function1 on line# 56
+        int function1(int a, int b){
+        };
+
+SEMERR#10:      Wrong number of indices  on line# 69:   array_var1=> 2 dimentions are required
+
+SEMERR#15:      Not an Array on line# 69 :<l> is not an array
+SEMERR#9:       Function parameter type missmatch on line# 69 => int is required in function func2
+SEMERR#10:      Wrong number of indices  on line# 70:   array_var1=> 2 dimentions are required
+
+SEMERR#10:      Wrong number of indices  on line# 70:   cc=> 2 dimentions are required
+
+SEMERR#10:      Wrong number of indices  on line# 71:   array_var1=> 2 dimentions are required
+
+SEMERR#10:      Wrong number of indices  on line# 71:   cc=> 2 dimentions are required
+
+SEMERR#10:      Wrong number of indices  on line# 74:   array_2=> 3 dimentions are required
+
+SEMERR#15:      Not an Array on line# 75 :<k> is not an array
+
+SEMERR#10:      Wrong number of indices on line# 77 :array_2=> 3 dimentions are required
+SEMERR#10:      Wrong number of indices  on line# 78:   array_2=> 3 dimentions are required
+
+SEMERR#10:      Wrong number of indices  on line# 79:   array_2=> 3 dimentions are required
+
+SEMERR#15:      Not an Array on line# 80 :<k> is not an array
+SEMERR#10:      Wrong number of indices  on line# 87:   array_var3=> 2 dimentions are required
+
+
+SEMERR#7:       Assignment Type mismatch on line# 87 : int is required
+SEMERR#10:      Wrong number of indices  on line# 88:   array_var3=> 2 dimentions are required
+
+
+SEMERR#7:       Assignment Type mismatch on line# 88 : int is required
+SEMERR#10:      Wrong number of indices  on line# 89:   array_var3=> 2 dimentions are required
+
+SEMERR#10:      Wrong number of indices  on line# 89:   array_var3=> 2 dimentions are required
+
+
+SEMERR#7:       Assignment Type mismatch on line# 89 : int is required
+
+Symbol table for: free_func1 on line# 94
+        CL3 free_func1(){
+                CL1 obj_cl1;
+                CL2 obj_cl2;
+                CL3 obj_cl3;
+        };
+
+SEMERR#10:      Wrong number of indices  on line# 114:  array_var2=> 2 dimentions are required
+
+SEMERR#10:      Wrong number of indices  on line# 114:  arr=> 3 dimentions are required
+
+SEMERR#15:      Not an Array on line# 114 :<b> is not an array
+SEMERR#9:       Function parameter type missmatch on line# 114 => int is required in function function1
+SEMERR#15:      Not an Array on line# 115 :<class_var> is not an array
+SEMERR#9:       Function parameter type missmatch on line# 115 => int is required in function function1
+SEMERR#5:       Invalid parameter list on line# 116: function1 =>Invalid number of parameters =>2 parameters are required
+SEMERR#15:      Not an Array on line# 117 :<class_var> is not an array
+SEMERR#9:       Function parameter type missmatch on line# 117 => int is required in function function1
+SEMERR#5:       Invalid parameter list on line# 117: function1 =>Invalid number of parameters =>2 parameters are required
+SEMERR#15:      Not an Array on line# 118 :<class_var> is not an array
+SEMERR#9:       Function parameter type missmatch on line# 118 => int is required in function function1
+SEMERR#15:      Not an Array on line# 120 :<array_var1> is not an array
+SEMERR#5:               Invalid parameter list on line# 124     :function1      2 parameters are required
+SEMERR#15:      Not an Array on line# 126 :<b> is not an array
+SEMERR#10:      Wrong number of indices  on line# 127:  array_var2=> 2 dimentions are required
+
+SEMERR#10:      Wrong number of indices  on line# 128:  array_var2=> 2 dimentions are required
+
+SEMERR#10:      Wrong number of indices  on line# 129:  array_var2=> 2 dimentions are required
+
+SEMERR#10:      Wrong number of indices  on line# 129:  arr=> 3 dimentions are required
+
+SEMERR#10:      Wrong number of indices  on line# 130:  array_var2=> 2 dimentions are required
+
+
+SEMERR#10:      Wrong number of indices on line# 130 :arr=> 3 dimentions are required
+SEMERR#10:      Wrong number of indices  on line# 131:  array_var2=> 2 dimentions are required
+
+SEMERR#10:      Wrong number of indices  on line# 131:  arr=> 3 dimentions are required
+
+
+Symbol table for: free_func2 on line# 105
+        float free_func2(int a, CL2 array_var1){
+                int arr [1][2][3];
+                CL2 array_var2 [2][4];
+                int b;
+                int c;
+                CL2 class_var;
+                CL3 var;
+        };
+
+
+Symbol table for: free_func3 on line# 136
+        int free_func3(int k){
+        };
+
+
+Symbol table for: func1 on line# 140
+        int func1(){
+        };
+
+
+
+----------Output for global scope-------
+class CL1{
+        int a;
+        int ar [10][3];
+        CL2 array_var1 [10][5];
+        float b;
+        float c;
+        CL3 func1(CL2 var);
+        int func2();
+};
+class CL2{
+        int a;
+        float b;
+        int func2(int a);
+        CL3 var_cl3;
+};
+class CL3{
+        int function1(int a, int b);
+        int val;
+};
+        CL3 free_func1();
+        float free_func2(int a, CL2 array_var1);
+        int free_func3(int k);
+        int func1();
+program{
+        int array_2 [2][3][4];
+        CL2 array_var3 [2][3];
+        int cc [7][9];
+        CL1 class_var;
+        int k;
+        int l;
+};
+----------------------------------------
+
+
+file parsing is finished
+----------------------------------------
+0 ERROR:s
+0 CASCADING ERRORS:s
+50 SEMANTIC ERROR:s

@@ -1,0 +1,106 @@
+// validates multiply defined identifier in different scopes
+// variables, functions, classes
+
+class ABC{
+
+	int  a;
+	int b;
+	float c;
+	
+	int f3( int p1, float p2){
+		int k;
+		float f1;
+
+		if(p1 + p2 >= 10) then { // type missmatch <float> and <int>
+			p1 = (a+b) * p2; // // type missmatch
+			return(p1);
+			
+			}
+		else	
+		return(p2);; // invalid return type
+	
+	};
+	// multiply defined identifier <f1>
+		float f5( int p1){
+		
+			ABC f1;
+			
+			if(p1 + p2 >= 10) then { // undeclared identifier <p2>
+			p1 = (a+b) * p2; // undeclared identifier  <p2>
+			return(p1); // invalid return type
+			
+			}
+		else	
+		return(p2);; // undeclared identifier 
+	
+	};
+
+};
+
+
+class BCD{
+	int a;
+	int b;
+		
+		int f1( int p1, float p2){
+		if(p1 + p2 >= 10) then { // type missmutch
+			p1 = (a+b) * p2; // type missmutch
+			return(p1);
+			
+			}
+		else	
+		return(p2);; // invalid return type <int> is expected 
+		};
+
+	
+		float f3( int p1, float p2){
+		if(p1 + p2 >= 10) then { // parameters of the same type are required 
+			p1 = (a+b) * p2;//// parameters of the same type are required 
+			return(p1);  // invalid return type <float>is expected
+			
+			}
+		else	
+		return(p2);;
+	
+		};
+};
+
+class CDE{
+ ABC abc;
+ 
+ ABC f1(float p1, ABC abc){
+	ABC abc2;
+ 
+	abc2 = f1(p1-l, abc); //undeclared identifier <l> => invalid number of parameters
+	return(abc2); 
+	
+ };
+
+};
+
+program{
+	CDE cde[10][3][4];
+	ABC abc2;
+	int p1;
+	float p11;
+	abc2 = f2( p1, f2(p1 - 1, abc2)); // 2 undeclared identifiers <f2>
+	abc2 = cde[1][1][1][3][3].f1(p11, f2(p1 - 1, abc2)); // wrong number of indices <cde>
+	abc2 = cd[1][1][1].f1(p11, f2(p1 - 1, abc2));// <cd> is undeclared 
+
+};
+
+ ABC f1(int p1, ABC abc){
+	ABC abc2;
+ 
+	abc2 = f1(p1-1, abc);
+	return(abc2); 
+	
+ };
+
+
+
+ float f4(){
+int a;
+
+ // do something
+ };

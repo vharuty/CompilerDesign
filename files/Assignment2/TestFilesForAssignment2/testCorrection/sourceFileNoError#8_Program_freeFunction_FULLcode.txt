@@ -1,0 +1,48 @@
+
+//File contains only program and free functions
+program {
+
+	
+	MyClass1 var5[10][20] ;
+	MyClass1 var6;
+	int var7; 
+	
+	for (int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) 
+		for ( int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) ; ;
+	
+	  } ;
+
+
+
+
+MyClass1 function2 ( ){ 
+	for ( int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8 ) 
+		for ( float j  = 12 ; 	ab <> bc  ; abc.bcd[20].abc = 13 <> 12.8 ) ; ;  
+};
+
+myClass3 MyFunk3 ( float param2[10] ) {
+	
+};
+
+float MyFunk2 ( int param1 , MyClass param2[20][20], float param2[10][10][10][10], int param2[10] ) { 
+
+	MyClass1.Var7[ 20 ]  =  ( 20 * not + 20 ) * 10 + abc.bcd[20][10].abc ( 20 == 10  ) * 20+ ( 20.8) * 15 +not 20   <>  20 *20.5  ; 
+	
+	get ( a[10][20][21]) ; 
+	bs[12].bcd[20].abc	 =	( 20 * not + 20 ) * 10 + abc.bcd[20][10].abc ( 20 == 10  ) * 20+ ( 20.8) * 15 +not 20   <>  20 * 20.5  ;
+	for ( MyClass i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8 ) {
+		get ( bs[12].bcd[20].abc ) ;
+		put ( 10 ) ;
+		if ( 10 ) then 
+			put ( 10 ) ; 
+		else 
+			put ( 10 ) ;;
+	} ;
+	
+	return ( 10 ) ; 
+
+} ; 
+
+
+
+

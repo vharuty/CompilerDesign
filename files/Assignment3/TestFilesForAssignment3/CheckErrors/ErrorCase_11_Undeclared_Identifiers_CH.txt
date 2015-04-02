@@ -1,0 +1,44 @@
+// file contains undeclared parameters
+// variable,class and function
+// error messages <1> and <12> are outputted for every undefined type. That is because of the rules=> 
+// when <id> is read by the compiler, it is impossible to recognize whether it is going to  be a type or it is a variable of an assignment opperation
+//so, that <id> is validated 2 times
+//If I avoid this, then some of the errors may not be appear !
+
+class ABC{
+
+	BCD bcd; // <BCD> is undeclared
+	int f1( cl1 par1, float par2){ //<cl1> and <cl3> are not declared
+		cl3 par3;
+
+		par3 = 2 * par3 + 4;
+	};
+
+	BCD f2(){ //// <BCD> is undeclared
+		//just do something
+		return(10);
+
+	};
+
+};
+
+program {
+	myClass c1[10];
+	ABC abc;
+	int a;
+	c1[4].abc.g[10] = 2; // this error will not be outputed
+	a = f_doesNotExist(); // undefined function => this error will not be outputed
+
+};
+
+ABC free_f1( int a){
+
+	for( int i = 1; j < 10; k = k +1){ // <j> is not declared, <k> is not declared
+										// error will not be outputed 
+		a = a * i;
+	} ;
+};
+
+BCD free_2(){
+	//do something 
+};

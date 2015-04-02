@@ -1,0 +1,122 @@
+// function parameter type checking 
+// arrays
+// simple variables
+// object of arrays
+// not that code is not executable
+// and probably has no meaning 
+
+class AAA{
+
+	int sum;
+	int arr[3][3][3];
+
+	int computeSum(){ 
+		int sum;
+		sum = 0;
+
+		return(sum);
+	};
+
+	int class_func(int a, float k, float b){
+	return(0);
+	
+	};
+
+};
+
+class BBB{
+int a;
+int b;
+
+};
+
+program{
+	AAA aaa[2][2];
+	int res;
+	int arr[3][3][3];
+	float arr_float[3][3];
+	int f_value11;
+
+		put( free_funct( arr[1][1][1] )); // =====> fucntion receives an array as a parameter
+	put( Free_func_object( arr, arr_float, res) ); //  <arr_float> is an array of a type <float> the function requires array of object type <AAA>
+	res = res + 1;
+	res = ( Free_func_object( arr, arr, f_value11) ); // the last parameter mast be a float value not an int
+	res = free_func_simple_2; // invalid function call
+	res = free_func_simple_1; // invalid function call
+	res = free_func_simple_1(arr); // no parameters
+	res = free_func_simple_2(res); //invalid number of parameters
+
+
+	res = aaa.computeSum; // invalid function call
+	res = aaa.computeSum( res); // invalid parameter list=> 0 parameters are required
+
+			// class_func (int a, float k, float b)				
+	res = aaa.class_func( arr , f_value11 , arr_float[1][1]);  // invalid parameter type for <a> for <k>
+	res = aaa.class_func( arr[1][1][1] , arr_float[1][1], arr_float[1][2], arr_float[2][1]);  // invalid number of parameters
+
+ 
+};
+
+int free_funct( int arr[3][3][3]){
+	int sum;
+	BBB bbb[2][2];
+
+sum = 	Free_func_object(arr[3][3], bbb, sum);  //  <arr> has 3 dimentions, first parameter should be an array,  second parameter an array of a type <AAA> , <sum> is of a type <int>
+	
+sum = 0;
+
+	return( sum );
+};
+
+int Free_func_object( int arr[3][3][3], AAA aaa[2][2] , float f_value){  
+	int sum;
+	int array_sum[4];
+	int total_sum;
+	int jkl;
+
+	sum = free_func_simple_2; // invalid function call
+
+	return(total_sum ); // returns the total summ of all the arrays in the objects 
+
+};	
+
+int free_func_simple_1(){
+	return(0);
+};
+
+int free_func_simple_2( int a, float k, float b){
+	return(0);
+
+};
+
+
+
+// Error messages => not that there are some additional errors
+
+/*
+SEMERR# CIRCULAR REFERENCE is detected on line #62
+SEMERR#9:       Function parameter type missmatch on line# 40 => <array> is required in function free_funct for parameter arr
+SEMERR#9:       Function parameter type missmatch on line# 41 => <AAA> is required in function Free_func_object for parameter aaa
+SEMERR#9:       Function parameter type missmatch on line# 41 => <float> is required in function Free_func_object for parameter f_value
+SEMERR#9:       Function parameter type missmatch on line# 43 => <AAA> is required in function Free_func_object for parameter aaa
+SEMERR#9:       Function parameter type missmatch on line# 43 => <float> is required in function Free_func_object for parameter f_value
+SEMERR#19:      Invalid Function call on line#  44      Is not an approptiate  function:        free_func_simple_2
+SEMERR#19:      Invalid Function call on line#  45      Is not an approptiate  function:        free_func_simple_1
+SEMERR#5:               Invalid parameter list on line# 46      :free_func_simple_1     0 parameters are required
+SEMERR#5:       Invalid parameter list on line# 47: free_func_simple_2 =>Invalid number of parameters =>3 parameters are required
+SEMERR#19:      Invalid Function call on line#  50      Is not an approptiate  function:        computeSum
+SEMERR#5:               Invalid parameter list on line# 51      :computeSum     0 parameters are required
+SEMERR#9:       Function parameter type missmatch on line# 54 => <int> is required in function class_func for parameter a
+SEMERR#9:       Function parameter type missmatch on line# 54 => <float> is required in function class_func for parameter k
+SEMERR#5:               Invalid parameter list on line# 55      :class_func     3 parameters are required
+SEMERR#10:      Wrong number of indices  on line# 64:   arr=> 3 dimentions are required
+
+SEMERR#9:       Function parameter type missmatch on line# 64 => <array> is required in function Free_func_object for parameter arr
+SEMERR#1:       Undeclared identifier on line# 64 : bbb
+
+SEMERR#9:       Function parameter type missmatch on line# 64 => <array> is required in function Free_func_object for parameter aaa
+SEMERR#9:       Function parameter type missmatch on line# 64 => <float> is required in function Free_func_object for parameter f_value
+SEMERR#19:      Invalid Function call on line#  77      Is not an approptiate  function:        free_func_simple_2
+file parsing is finished
+
+*/

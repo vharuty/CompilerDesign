@@ -1,0 +1,94 @@
+
+Symbol table for: func_A on line# 13
+	int func_A(int a, int array_a [4][4]){
+		int i;
+		int j;
+		int result;
+	};
+
+
+Symbol table for: func_computeSum on line# 26
+	int func_computeSum(int a){
+		int res;
+		int sum;
+	};
+
+
+Symbol table for: init_A on line# 35
+	int init_A(int array_int [3], DDD obj_d, CCC obj_c){
+		int res;
+	};
+
+
+Symbol table for: func_B on line# 51
+	int func_B(int b, int array_b [4][4]){
+		int i;
+		int j;
+		int sum;
+	};
+
+
+Symbol table for: init_b on line# 61
+	int init_b(int init_array [3], DDD obj_d, CCC obj_c){
+		int res;
+	};
+
+
+Symbol table for: init_C on line# 81
+	int init_C(int c, int c1, DDD d){
+		int result;
+	};
+
+
+Symbol table for: init_D on line# 95
+	int init_D(DDD d){
+	};
+
+
+
+----------Output for global scope-------
+class AAA{
+	int aaa;
+	int aaa1;
+	int aaa2;
+	int array_a_member [4][4];
+	BBB bbb;
+	int func_A(int a, int array_a [4][4]);
+	int func_computeSum(int a);
+	int init_A(int array_int [3], DDD obj_d, CCC obj_c);
+};
+class BBB{
+	int bbb;
+	int bbb1;
+	int bbb2;
+	CCC ccc;
+	DDD ddd;
+	int func_B(int b, int array_b [4][4]);
+	int init_b(int init_array [3], DDD obj_d, CCC obj_c);
+};
+class CCC{
+	int ccc;
+	int ccc1;
+	DDD ddd;
+	int init_C(int c, int c1, DDD d);
+};
+class DDD{
+	int ddd;
+	int init_D(DDD d);
+};
+program{
+	AAA a_obj;
+	int array_Computation [4][4];
+	int array_init [3];
+	int c;
+	int c1;
+	CCC c_object;
+	DDD d_object;
+	int i;
+	int j;
+	int k;
+	int result;
+};
+----------------------------------------
+
+

@@ -1,0 +1,71 @@
+// 1.	This file checks complex expression in different statements
+// 2. note: statement of 'then' and 'else' are empety since it is allowed by language grammar
+
+
+program {
+	MyClass1 var5[10][20] ;
+	MyClass1 var6;
+	int var7;
+	int  abc ; 
+	float bcd[10][20][10] ; 
+	float var1[10]  ; 
+	ClassType1 var2 ; 
+
+// complec expression in 'if' statement
+
+	if (  aaa[not abc.bcd.gde[10] and  abc.bcd.gde  ][not abc.bcd.gde[10] and  abc.bcd.gde].bcd.cde[not abc.bcd.gde[10] and  abc.bcd.gde].bcd( 10 <= 20 , abc.bcd() == abc.bcd() ) 
+ *( not 74 * not 20  and +16  or 18)  or 10 + 
+ abc.bcd.efg[2][not 74 * not 20  and +16  or 18][not abc.bcd.gde[10] and  abc.bcd.gde]( 10 <= 20, abc.bcd() == abc.bcd() )  * not 10 
+ and ( not abc.bcd.gde[10] and  abc.bcd.gde )  
+<= not 20 and  abc( 10 <= 20)+74 * ( not 74 * not 20  and +16  or 18) 
+) 	
+	then  // has no statement
+	 
+	else {} ; // has empety statement
+
+// complex assignment expression
+	ab.bc.cd =   aaa[not abc.bcd.gde[10] and  abc.bcd.gde  ][not abc.bcd.gde[10] and  abc.bcd.gde].bcd.cde[not abc.bcd.gde[10] and  abc.bcd.gde].bcd( 10 <= 20 , abc.bcd() == abc.bcd() ) 
+ *( not 74 * not 20  and +16  or 18)  or 10 + 
+ abc.bcd.efg[2][not 74 * not 20  and +16  or 18][not abc.bcd.gde[10] and  abc.bcd.gde]( 10 <= 20, abc.bcd() == abc.bcd() )  * not 10 
+ and ( not abc.bcd.gde[10] and  abc.bcd.gde )  
+<= not 20 and  abc( 10 <= 20)+74 * ( not 74 * not 20.0002  and +16  or 18)  ; 
+	
+	abc =  aaa[not abc.bcd.gde[10] and  abc.bcd.gde  ][not abc.bcd.gde[10] and  abc.bcd.gde].bcd.cde[not abc.bcd.gde[10] and  abc.bcd.gde].bcd( 10 <= 20 , abc.bcd() == abc.bcd() ) 
+ *( not 74 * not 20.763  and +16  or 18)  or 10 + 
+ abc.bcd.efg[2][not 74 * not 20  and +16  or 18][not abc.bcd.gde[10] and  abc.bcd.gde]( 10 <= 20, abc.bcd() == abc.bcd() )  * not 10 
+ and ( not abc.bcd.gde[10] and  abc.bcd.gde )  
+<= not 20 and  abc( 10 <= 20)+74 * ( not 74 * not 20.764  and +16  or 18) ;  
+ 	
+
+//complex assignment expression in 'for'
+	
+	for (int i =  aaa[not abc.bcd.gde[10] and  abc.bcd.gde  ][not abc.bcd.gde[10] and  abc.bcd.gde].bcd.cde[not abc.bcd.gde[10] and  abc.bcd.gde].bcd( 10 <= 20 , abc.bcd() == abc.bcd() ) 
+ *( not 74 * not 20  and +16  or 18)  or 10 + 
+ abc.bcd.efg[2][not 74 * not 20  and +16  or 18][not abc.bcd.gde[10] and  abc.bcd.gde]( 10 <= 20, abc.bcd() == abc.bcd() )  * not 10 
+ and ( not abc.bcd.gde[10] and  abc.bcd.gde )  
+<= not 20 and  abc( 10 <= 20)+74 * ( not 74 * not 20  and +16  or 18.234) ;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) 
+		for ( int i = 13 <> 12.8;  20 <> 20  ; abc.bcd[20].abc = 13 <> 12.8  ) ; ;
+
+	
+//assignment statement
+
+abc =  aaa[not abc.bcd.gde[10] and  abc.bcd.gde  ][not abc.bcd.gde[10] and  abc.bcd.gde].bcd.cde[not abc.bcd.gde[10] and  abc.bcd.gde].bcd( 10 <= 20 , abc.bcd() == abc.bcd() ) 
+ *( not 74 * not 20  and +16  or 18)  or 10 + 
+ abc.bcd.efg[2][not 74 * not 20  and +16  or 18][not abc.bcd.gde[10] and  abc.bcd.gde]( 10 <= 20, abc.bcd() == abc.bcd() )  * not 10 
+ and ( not abc.bcd.gde[10] and  abc.bcd.gde )  
+<= not 20 and  abc( 10 <= 20)+74 * ( not 74 * not 20  and +16  or 18) ;  
+ 
+
+//complex expression as an argument of <put> statment	
+put ( aaa[not abc.bcd.gde[10] and  abc.bcd.gde  ][not abc.bcd.gde[10] and  abc.bcd.gde].bcd.cde[not abc.bcd.gde[10] and  abc.bcd.gde].bcd( 10 <= 20 , abc.bcd() == abc.bcd() ) 
+ *( not 74 * not 20  and +16  or 18)  or 10 + 
+ abc.bcd.efg[2][not 74 * not 20  and +16  or 18][not abc.bcd.gde[10] and  abc.bcd.gde]( 10 <= 20, abc.bcd() == abc.bcd() )  * not 10 
+ and ( not abc.bcd.gde[10] and  abc.bcd.gde )  
+<= not 20 and  abc( 10 <= 20)+74 * ( not 74 * not 20  and +16  or 18)   
+ 	 ) ;
+	
+
+
+
+};
+ 

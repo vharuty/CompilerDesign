@@ -1,0 +1,25 @@
+
+
+----------Output for global scope-------
+class AAA{
+	int aaa_i;
+	int aaa_j;
+	BBB obj_BBB [2][2];
+};
+class BBB{
+	int arr [5];
+	int bbb;
+};
+program{
+	int i;
+	int j;
+	int k;
+	int l;
+	int m;
+	AAA obj [2][2][2];
+	int p;
+	int result;
+};
+----------------------------------------
+
+

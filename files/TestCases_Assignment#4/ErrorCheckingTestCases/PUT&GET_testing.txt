@@ -1,0 +1,36 @@
+// this file tests the correctnes <put> and <get> statements
+
+class AAA{
+
+	int a;
+	int b;
+
+};
+
+program{
+
+	int arr[3][3];
+	AAA aaa;
+	int a;
+	int b;
+
+	get(aaa); // errror
+	put(aaa); //error
+	get(arr); // 
+	put(arr); // error
+
+
+};
+
+
+// Errors output
+
+/*
+
+SEMERR#21:      Invalid  operation on line# 15 :        <get>  is defined only for <int> and <float> variables
+SEMERR#21:      Invalid operation on line#      16      :<put>  is defined only for <int> and <float> values
+SEMERR#21:      Invalid  operation on line# 17 :        <get>  is defined only for <int> and <float> variables
+SEMERR#21:      Invalid operation on line#      18      :<put>  is defined only for <int> and <float> values
+file parsing is finished
+
+*/

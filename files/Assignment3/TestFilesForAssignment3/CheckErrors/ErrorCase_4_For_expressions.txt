@@ -1,0 +1,89 @@
+// checking errors related to <for> statements
+// + some additional errors
+class ABC{
+
+	float b[10];
+	CDE cde[10][10];
+	CDE cde2;
+	BCD bcd;
+
+	int func1(){
+		i = j ;// <i> and <j> are valied only after declaration in <for> statement
+		for( int i =1;  i <= i or bcd.convert(b[i]) / (-1)and(bcd.convert(b[i])); i = j or 1) //<j> is valid only after declaratin in seconf <for> statement
+																								// <or> works as an additional operator by given grammar
+							// invalid number of indices																	// even though it is has nological  meanning, but it is allowed to use	
+				for( int j = cde[j].a; j <= cde2.returnObj(i, j) * free_func1(); j = j or  free_func1()){
+					put(cde2.returnObj(i, j) * free_func1());
+					get(cde[j][i].a);
+
+				};;
+		for( int i = 1; i <= 10; i = i+1){ // <i> is already definde 
+			for(float k = 2; k <= 10.1; k = k + 0.0){}; // can't use <float> value
+		
+		};
+
+	};
+
+
+};
+class BCD{
+
+	int function_float(float a, float b){
+		return(convert(a) and convert(b) / (convert(a) or convert(b)));
+	};
+
+	int convert(float k){
+		int a;
+		return (a);
+	};
+
+};
+
+class CDE{
+	BCD bcd;
+	int a;
+	float c;
+	float d;
+	int returnObj(int a, int b[2][6]){
+		for(int i = 1; i < 10; i = i +1)											// parameter is missing
+			for(int j = j+ b[1][1] and a * a or b[i][j] ; j <= a * bcd.function_float(c); j = j+ b[1][1] and a * a or b[i][j] / j+ b[j][i] and a * (-a) * (-1) or b[i][j]) // <and>, <or>, <sign factor>
+				a = a*b[i][j] + bcd.function_float(c);;; // parameter is missing
+	};
+
+};
+
+program{
+	CDE cde;
+	ABC  abc;
+	int a;
+	float c;
+	float d;
+	//<a>not an array					//returns object of type <CDE>	
+	a[1]  = free_func1() + cde.returnObj( a, cde.bcd.function_float(c,d)) / abc.func1(); // complex expression with complex nested return type
+	for(int i = 2.8 * c / d; i <= 10; i = i +1){ // <float value is assigned to <int>>
+								//returns object of type <CDE>	
+	a  = free_func1() + cde.returnObj( a, cde.bcd.function_float(c,d)) / abc.func1(); // complex expression with complex nested return type
+
+	};
+
+	for(int k = 12; k <= 10.3; k = k +2) // float value comparison with integr
+	{
+		for(int p = 1; p <= 10; p = 5.8){}; // float value is assigned to integer
+	
+	};
+};
+
+int free_func1(){
+
+	BCD bcd;
+	int a;
+	float c;
+	float d;
+	int b[2][6];
+	
+		for(int i = 1; i < 10; i = i +1)
+			for(int j = j+ b[1][1] and a * a or b[i][j] ; j <= a * bcd.function_float(c, d); j = j+ b[1][1] and a * a or b[i][j] / j+ b[j][i] and a * (-a) * (-1) or b[i][j]) // <and>, <or>, <sign factor>
+				a = a*b[i][j] + bcd.function_float(c, d);;;
+	return(a);
+
+};

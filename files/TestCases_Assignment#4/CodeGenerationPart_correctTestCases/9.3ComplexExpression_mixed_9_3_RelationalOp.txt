@@ -1,0 +1,83 @@
+//Test file evaluates complex expressions
+// that include functon call
+// also, nested loops, multidimentional array passing to finctions
+//single array element pass to a function as a parameter value
+// file contains also logical operator mixed with arithmetic operators
+
+//NOT INPUT VALUE OF <K>
+// if k = 0 , output = 1
+// if k >=1 0utput = 120 ....
+
+program{
+	int array1[5][5];
+	int param1;
+	int param2;
+	int k ;
+	int result;
+	k = 2 ; 
+
+	for(int i = 0; i <= 4; i = i +1)
+		for(int j = 0; j <= 4; j = j + 1)
+			array1[i][j] = i*j;;;
+
+	param1 = i + j + k ; // 12
+	param2 = i* j * k; //50
+
+
+	get(k);  //=====================> get <k>
+
+	 // k=0 => out 1 // k >= 1	=> 120 // k<0 =>	43	
+	if( ( free_func3( array1 ,  6 , 7 *4 + -8)/2 or  ( free_func1(param2 , param1, array1) ) - (free_func3( array1 ,  6 , 7 and 4 + 8) / 2 - -10 )) or 3  + k >= 43) then
+		if ( free_func3( array1 ,  6 , 7 *4 + -8)/2 == 120 + k)  then
+			put(not ( result - result )); // 1
+		else
+			put(  free_func3( array1 ,  6 , 7 *4 + -8)/2  );; // 120
+
+	else
+		put(  43 );;
+
+
+
+
+
+}; 
+//50			//12
+int free_func1(int intParam2 , int intParame1 ,int b[5][5]){
+	int result;
+
+	//12			//100
+	result = free_func2( b , intParame1,  intParam2 * 2 ) ;// =>returns 166
+
+
+	return( result );
+};
+
+
+int free_func2(int b[5][5] , int intParam1, int intParam2){
+	int finalResult ;
+	int result;
+	int localArray[5][5]; 
+	int k;
+	finalResult = intParam1 + intParam2 ; // 12 + 100
+
+	k = 3; 
+
+	for(int i = 0;i <= 3; i = i+1)
+		for(int j = 0; j <= 3; j = j +1)
+			localArray[i][j] = b[i][j]  ;;;
+	//put(finalResult + localArray[2][3] + 2 * ( b[2][3] + free_func3( localArray ,  localArray[2][2],  b[1][1]) / 4 + 10) );
+	//112	and	//6	 =>0								//-------2* ( 6 + 34 / 4 or 10 )  ===> 10-----------		 return value = 20									
+	return( finalResult  and  localArray[2][3] + 2 and  ( b[2][3] or free_func3( localArray ,  localArray[2][2],  b[1][1]) / 4 or 10) ); //=>166
+};
+
+
+int free_func3(int b[5][5], int intParam1, int intParam2){ // first cal 6 36   ... secod call 
+
+	int result1;
+	int result2;
+	result2 = b[2][3] or b[0][1];	 // 2*3+ 1*0		
+	result1  =  ( b[2][3] + intParam1 )* intParam2; // 120 ??  // 
+
+	return(result1 or 3 and 4) ; 
+
+};

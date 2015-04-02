@@ -1,0 +1,122 @@
+// Error checking for some complex nested clls
+// including arrays and function parameters
+// complex expressions
+//complex expressions as function parameter
+//complex expression as array index
+class CL1{
+	int a;
+	float b;
+	float c;
+	CL2 array_var1[10][5];
+	int ar[10][3];
+	CL3 cl3;
+
+	CL3 func6(CL2  obj_cl2){
+
+	};
+	int func1(CL2 var){
+		int b; // scope variable
+		int c; // scope variable
+
+		c =  array_var1[10][3].a;
+		a = free_func3(b); // <a> is a class variable
+		c = var.var_cl3[1].function1(a ); // missing one parameter in function call;
+
+		c = var.var_cl3[1].function1(a, b) + 5 - array_var1[a + b * free_func3(b)][5].a;
+		array_var1[a + b * free_func3(b)][5].a[7] = c * var.var_cl3[1][2].function1(a, b) + 5 ; //=> <a> is not an array , var.var_cl3[1] is one dimentional
+
+		return(c);
+	};
+
+	ABC func2(){
+		ABC returnVal;
+
+		return(returnVal); 
+	};
+
+
+};
+
+class ABC{
+
+};
+
+class CL2{
+	int a;
+	float b;
+	CL3 var_cl3[5];
+
+	int func2(int a){
+		int returnVal;
+		int b; 
+		returnVal = var_cl3[2][8].function1(a, b); // <b> is local, <a> is a class member , var_cl3[2] is one dimentional
+	};
+
+};
+
+class CL3{
+
+	int val;
+	int function1(int a, int b){
+
+		return(a + b);
+	};
+};
+
+program{
+	CL2 array_var3[2][3];
+	int array_2[2][3][4];
+	int l[10];
+	int  k;
+	float kk;
+	int cc[7][9];
+	CL3 var;
+	int a;
+	CL1 class_var;
+	CL2 array_var2[2][4];
+	array_2[1][1][1] = l[5];
+	k = (class_var[2][1].array_var1[10][5].func2(l[9]) * class_var.array_var1[10][5].func2(cc[5]) + array_2[1][1][1]) /
+			array_var3[2][3]. var_cl3[5]. function1(k, l[1]); // <class_var>  is notaarray , cc[5][2] is 2 dimentional
+	array_2 = array_var3[2][3]. var_cl3[5].val; // <array_2[2][3][4]> is an array
+	array_var3[2]. var_cl3[5].val = 	array_2[2][3][4]; // => <array_var3[2][3]> is 2 dimentional
+
+	class_var.cl3[9].val = (class_var.array_var1[10][5].func2(l[9]) * class_var.array_var1[10][5].func2(cc[5][2]) + array_2[1][1][1]) / 
+		array_var3[2][3]. var_cl3[5]. function1(k, l[1]); //<cl3> is not an array
+
+		k = var.function1(class_var.a[9],  array_var2[1][1 + a].a +   (class_var.array_var1[10][5].func2(l[9]) * 
+			class_var.array_var1[10][5].func2(cc[5][2]) + array_2[1][1]) / 
+			array_var3[2][3]. var_cl3[5]. function1(k, l[1])  ); //expression as a parameter => <a> is not an array , <array_2[1][1][1]> 3 dimentional
+		k  = a.b; // <a> is not user defined type
+	
+	kk =  free_func2(array_var3[2][3].a, array_var3[2][2]); 
+};
+
+CL3 free_func1(){
+	CL1 obj_cl1;
+	CL3 obj_cl3;
+	CL2 obj_cl2;
+	obj_cl3 =  obj_cl1.func6(obj_cl2); 
+
+
+	return(obj_cl3);
+
+};
+
+float free_func2(int a, CL2 array_var1){
+
+	int b; // scope variable
+	int c; // scope variable
+	int arr[1][2][3];
+	CL2 array_var2[2][4];
+	CL3 var;
+	CL2 class_var;
+
+	c = var.function1(array_var2[1][1 + a].a + array_var2[1][1].a + arr[1][2][1], array_var2[1][1 + a].a[3] + b); // <a> is not an array
+
+	c = array_var2[1][1 + a].a + b[5]; // <b> is not an array
+	array_var2[1][1 + a].a = c + b + array_var2[1][1 + a].a; //=>
+};
+
+int free_func3(int k){
+	return(k+1);
+};

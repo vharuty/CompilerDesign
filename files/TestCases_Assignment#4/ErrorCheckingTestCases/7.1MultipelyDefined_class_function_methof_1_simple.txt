@@ -1,0 +1,64 @@
+// multipely defined function
+// method
+// class
+
+class AAA{
+
+	int memFunc(float val1, int val2){
+		return(val2 );
+
+	};
+
+	float  memFunc(float val1, int val2){ // multipley defined methof 
+		return( val2);
+
+	};
+
+};
+
+class BBB{
+	int a;
+	int b;
+
+}; 
+
+class BBB{
+	int a;
+	int b;
+	float  memFunc(float val1, float val2){ // multipley defined methof 
+		return(val1 + val2);
+
+	};
+}; 
+
+
+
+program{
+
+
+};
+
+int free_func( int a, float b){
+	int value;
+	value = a;
+	return(value);
+
+};
+
+float unique(float arr[3][3]){
+	return(arr[1][1]);
+};
+
+int free_func(){ // multipely defined function
+
+	return(0);
+};
+
+//Error output
+
+/*
+SEMERR#11:	Multiply declared identifier on line# 12 : memFunc
+SEMERR#11:	Multiply declared identifier  on the line 25: BBB
+SEMERR#11:	Multiply declared identifier on line# 52 : free_func
+
+*/

@@ -1,0 +1,86 @@
+// undefined identifier class, function, variable
+
+class AAA{
+int a;
+int b;
+
+int func(){
+	int value;
+
+	value = value + 2*c; // <c> is undefined
+
+return(0);
+};
+
+
+};
+
+class BBB{
+CCC c; // Undefined identifier
+
+int func( CCC ccc, int a){
+	return(c); // invalid return type
+
+};
+
+
+};
+
+program{
+
+CCC c; // Undefined identifier
+AAA aaa;
+int value;
+
+value = aaa.Undefined(c); // function is undefined
+value  = aaa.bcd + c.bcd;
+
+put(free_func_undefined(value)); // Undefined identifier
+
+if(aaa.func_undefined(value) >= computeSum(value)) //Undeclared identifier  : computeSum
+	then
+	put(value);
+else 
+	value = freeFunc_undefined(value);; // Undeclared identifier freeFunc_undefined
+
+for(int i = 0; i <= aaa.bcd.cbc(); i = i +1) //Undeclared identifier bcd
+	put(ccc.cbc);; //Undeclared identifier  ccc
+
+};
+
+int fr_func_defined( int a, int b, CCC ccc){ // <CCC>  is undefined
+
+	return(a);
+};
+
+// errors
+/*
+
+SEMERR#1:	Undeclared identifier on line# 10 : c
+
+SEMERR#12:	Undefined identifier on line# 19 : CCC
+SEMERR#12:	Undefined identifier on line# 21 : CCC
+
+SEMERR#8:	Invalid return type for function  <func>  on line#  22	is expected <int>
+
+SEMERR#1:	Undeclared identifier on line# 31 : CCC
+
+SEMERR#12:	Undefined identifier on line# 31 : CCC
+SEMERR#1:	Undeclared identifier on line# 35: Undefined
+SEMERR#1:	Undeclared identifier on line# 36: bcd
+SEMERR#1:	Undeclared identifier on line# 36 : bcd
+SEMERR#1:	Undeclared identifier on line# 38 : free_func_undefined
+
+SEMERR#1:	Undeclared identifier on line# 40: func_undefined
+SEMERR#1:	Undeclared identifier on line# 40 : computeSum
+
+SEMERR#14:	Invalid relation on line# 40relational operators can be used only with <int> or <float>
+SEMERR#1:	Undeclared identifier on line# 44 : freeFunc_undefined
+
+SEMERR#1:	Undeclared identifier on line# 46: bcd
+SEMERR#1:	Undeclared identifier on line# 47 : ccc
+
+SEMERR#12:	Undefined identifier on line# 51 : CCC
+
+
+*/

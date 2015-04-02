@@ -1,0 +1,90 @@
+// this file checkes the correctness of the statements 
+// if, for, put, get, return
+// simple cases
+// complex cases are provided with error test cases
+
+class ABC{
+	BCD bcd;
+	int a;
+	int i;
+	int func1(int k){
+	int i;
+
+	for(int p = 0; p <=10; p = p+1){
+	
+		i = (i + p) * bcd.cde.a;
+	};
+
+	if(bcd.array_cde[3][4].a >= bcd.cde.a) then
+		if((i + p) * bcd.cde.a/  bcd.array_cde[3][4].a < 11 ) then 
+		return(i);
+		else return( (i + p) * bcd.cde.a/  bcd.array_cde[3][4].a );;
+	else {
+			for(int j = 0; j <=10; j = j+1){
+		i = (i + j) * bcd.cde.a;
+
+		put( (i + j) * bcd.cde.a);
+	};
+	
+	};
+
+	};
+
+};
+
+class BCD{
+	CDE cde;
+	CDE array_cde[3][4];
+	int a;
+	int b;
+	int func1(){
+	
+	};
+};
+
+
+class CDE{
+	int a;
+	int b;
+	int nestedFor( int m, int n){
+		
+	for(int i = 0; i <= 10; i = i + 1)
+		for(int j = 0; j <= 10; j = j+1 ){
+		
+		if(j*i/12*2 + (9+j*i) < i*j) then 
+			i = i *j;
+		else if(j< i-1) then 
+		{
+			i = j;
+		}
+		else{
+		j = j;
+		};;
+
+		};;
+	};
+};
+
+
+program{
+	ABC abc;
+	
+	//abc.a = free_function1(abc.bcd.a, abc.bcd.b);
+	abc.a = free_function1(abc.bcd.a, abc.bcd.b);
+};
+
+int free_function1(int i, int j){
+	int k;
+	int l;
+	ABC abc;
+	BCD bcd;
+	CDE cde;
+	k = abc.func1(i);
+//	l = bcd.nestedFor(i,j);
+	
+	l = cde.nestedFor(i,j); 
+
+	k = abc.func1(i) * cde.nestedFor(i,j) /(cde.nestedFor(i,j) + abc.func1(i));
+	return( k * l);
+
+};

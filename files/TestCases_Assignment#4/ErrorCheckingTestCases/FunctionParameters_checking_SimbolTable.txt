@@ -1,0 +1,63 @@
+
+Symbol table for: computeSum on line# 13
+	int computeSum(){
+		int sum;
+	};
+
+
+Symbol table for: class_func on line# 20
+	int class_func(int a, float k, float b){
+	};
+
+
+Symbol table for: free_funct on line# 60
+	int free_funct(int arr [3][3][3]){
+		int sum;
+	};
+
+
+Symbol table for: Free_func_object on line# 71
+	int Free_func_object(int arr [3][3][3], AAA aaa [2][2], float f_value){
+		int array_sum [4];
+		int jkl;
+		int sum;
+		int total_sum;
+	};
+
+
+Symbol table for: free_func_simple_1 on line# 83
+	int free_func_simple_1(){
+	};
+
+
+Symbol table for: free_func_simple_2 on line# 87
+	int free_func_simple_2(int a, float k, float b){
+	};
+
+
+
+----------Output for global scope-------
+class AAA{
+	int arr [3][3][3];
+	int class_func(int a, float k, float b);
+	int computeSum();
+	int sum;
+};
+class BBB{
+	int a;
+	int b;
+};
+	int Free_func_object(int arr [3][3][3], AAA aaa [2][2], float f_value);
+	int free_func_simple_1();
+	int free_func_simple_2(int a, float k, float b);
+	int free_funct(int arr [3][3][3]);
+program{
+	AAA aaa [2][2];
+	int arr [3][3][3];
+	float arr_float [3][3];
+	int f_value11;
+	int res;
+};
+----------------------------------------
+
+

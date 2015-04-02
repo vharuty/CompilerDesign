@@ -1,0 +1,106 @@
+Enter file name to scan:
+C:\Users\vika\Desktop\HarutyunyanCompilerAss3\files\sourceFile.cpp
+.\files\Assignment2\Syntax\RULLS.txt
+.\files\Assignment2\Syntax\FIRST.txt
+.\files\Assignment2\Syntax\FOLLOW.txt
+.\files\Assignment2\Syntax\FIRSTFOLLOW.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+SEMERR#11:      Multiply declared identifier on the line# 6: bcd
+SEMERR#11:      Multiply declared identifier on the line# 7: ABC
+SEMERR#11:      Multiply declared identifier on the line# 11: i
+SEMERR#11:      Multiply declared identifier on line# 12 : func1
+
+Symbol table for: func1 on line# 12
+Function 'func1' on line# 12 is ignored because of an error on its' decalaration=>
+scope is not printed
+SEMERR#11:      Multiply declared identifier on line# 38 : func1
+
+Symbol table for: func1 on line# 38
+Function 'func1' on line# 38 is ignored because of an error on its' decalaration=>
+scope is not printed
+SEMERR#1:       Undeclared identifier on line# 71: func11_ABC
+
+Symbol table for: func1 on line# 70
+        int func1(){
+        };
+
+SEMERR#11:      Multiply declared identifier on line# 74 : func1
+
+Symbol table for: func1 on line# 74
+Function 'func1' on line# 74 is ignored because of an error on its' decalaration=>
+scope is not printed
+SEMERR#11:      Multiply declared identifier  on the line 82: ABC
+
+Symbol table for: nestedFor on line# 128
+        int nestedFor(int m, int n){
+                int i;
+                int j;
+        };
+
+SEMERR#11:      Multipely declared identifier on line# 154 : i
+SEMERR#2:       Invalid Function on line#       160     Is not a  function:     func1
+
+SEMERR#2:       Invalid Function on line#       165     Is not a  function:     func1
+
+SEMERR#2:       Invalid Function on line#       165     Is not a  function:     func1
+
+
+Symbol table for: free_function1 on line# 154
+        int free_function1(int i, int j){
+                ABC abc;
+                BCD bcd;
+                CDE cde;
+                int k;
+                int l;
+        };
+
+SEMERR#11:      Multiply declared identifier on line# 171 : free_function1
+
+Symbol table for: free_function1 on line# 171
+Function 'free_function1' on line# 171 is ignored because of an error on its' decalaration=>
+scope is not printed
+SEMERR#11:      Multiply declared identifier on line# 188 : ABC
+
+Symbol table for: ABC on line# 188
+Function 'ABC' on line# 188 is ignored because of an error on its' decalaration=>
+scope is not printed
+
+
+----------Output for global scope-------
+class ABC{
+        int a;
+        BCD bcd;
+        float func1;
+        int i;
+};
+class BCD{
+        int a;
+        ABC ab;
+        CDE array_cde [3][4];
+        int b;
+        CDE cde;
+        int func1();
+};
+class CDE{
+        int a;
+        int b;
+        int nestedFor(int m, int n);
+};
+        int free_function1(int i, int j);
+program{
+        ABC abc;
+};
+----------------------------------------
+
+
+file parsing is finished
+----------------------------------------
+0 ERROR:s
+0 CASCADING ERRORS:s
+14 SEMANTIC ERROR:s

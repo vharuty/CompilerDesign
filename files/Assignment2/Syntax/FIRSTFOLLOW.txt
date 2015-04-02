@@ -1,0 +1,65 @@
+varDeclFunctDef_list	FOLLOW	}
+indiceIdnestList_tail	FOLLOW	=
+funcBody_	FOLLOW	}
+statBlock	FOLLOW	;	else
+exp_	FOLLOW	;	)	,
+arithExpr_	FOLLOW	]	;	)	,	<	<=	<>	==	>	>=
+term_	FOLLOW	]	;	)	,	<	<=	<>	==	>	>=	+	-	or
+idnest_list_	FOLLOW	=	)	]	;	,	<	<=	<>	==	>	>=	+	-	or	*	/	and	(
+factor_	FOLLOW	]	;	)	,	<	<=	<>	==	>	>=	+	-	or	*	/	and
+fParams	FOLLOW	)
+aParams	FOLLOW	)
+classDecl_list	FOLLOW	program
+funcDef_list	FOLLOW	$	}
+statement_list	FOLLOW	}
+arraySize_list	FOLLOW	;	)	,
+indice_list	FOLLOW	=	)	]	;	,	<	<=	<>	==	>	>=	+	-	or	*	/	and	(	.
+fParamsTail_list	FOLLOW	)
+aParamsTail_list	FOLLOW	)
+prog	FIRST	class	program
+classDecl	FIRST	class
+progBody	FIRST	program
+funcDef	FIRST	id	float	int
+funcBody	FIRST	{
+varDeclFunctDef_list	FIRST	EPSILON	id	float	int
+varDeclFunctDef_tail	FIRST	[	;	(
+indiceIdnestList_tail	FIRST	EPSILON	[	.
+varDeclStatement_tail	FIRST	.	[	=	id
+funcBody_	FIRST	EPSILON	for	if	get	put	return	id	float	int
+statement	FIRST	for	if	get	put	return	id
+assignmentStatment	FIRST	id
+restOfStatment	FIRST	return	put	get	if	for
+assignStat	FIRST	id
+statBlock	FIRST	EPSILON	id	for	if	get	put	return	{
+expr	FIRST	(	floatValue	intValue	not	id	+	-
+exp_	FIRST	EPSILON	<	<=	<>	==	>	>=
+relExpr	FIRST	(	floatValue	intValue	not	id	+	-
+arithExpr	FIRST	(	floatValue	intValue	not	id	+	-
+arithExpr_	FIRST	EPSILON	+	-	or
+sign	FIRST	-	+
+term	FIRST	(	floatValue	intValue	not	id	+	-
+term_	FIRST	EPSILON	*	/	and
+factor	FIRST	+	-	id	not	intValue	floatValue	(
+variable_	FIRST	id
+idnest_list_	FIRST	EPSILON	.
+idnest_	FIRST	.
+factor_	FIRST	EPSILON	(
+indice	FIRST	[
+arraySize	FIRST	[
+type	FIRST	float	int	id
+typeNumeric	FIRST	int	float
+fParams	FIRST	EPSILON	id	float	int
+aParams	FIRST	EPSILON	(	floatValue	intValue	not	id	+	-
+fParamsTail	FIRST	,
+aParamsTail	FIRST	,
+classDecl_list	FIRST	EPSILON	class
+funcDef_list	FIRST	EPSILON	id	float	int
+statement_list	FIRST	EPSILON	id	for	if	get	put	return
+arraySize_list	FIRST	EPSILON	[
+indice_list	FIRST	EPSILON	[
+fParamsTail_list	FIRST	EPSILON	,
+aParamsTail_list	FIRST	EPSILON	,
+assignOp	FIRST	=
+relOp	FIRST	>=	>	==	<>	<=	<
+addOp	FIRST	or	-	+
+multOp	FIRST	and	/	*

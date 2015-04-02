@@ -1,0 +1,65 @@
+Enter file name to scan:
+C:\Users\vika\Desktop\HarutyunyanCompilerAss3\files\sourceFile.cpp
+.\files\Assignment2\Syntax\RULLS.txt
+.\files\Assignment2\Syntax\FIRST.txt
+.\files\Assignment2\Syntax\FOLLOW.txt
+.\files\Assignment2\Syntax\FIRSTFOLLOW.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+SEMERR#12:      Undefined identifier on line# 10 : BCD
+SEMERR#12:      Undefined identifier on line# 11 : cl1
+SEMERR#1:       Undeclared identifier on line# 12 : cl3
+
+SEMERR#12:      Undefined identifier on line# 12 : cl3
+SEMERR#1:       Undeclared identifier on line# 14 : par3
+
+SEMERR#1:       Undeclared identifier on line# 14 : par3
+
+
+Symbol table for: f1 on line# 11
+        int f1(cl1 par1, float par2){
+        };
+
+SEMERR#1:       Undeclared identifier on line# 26 : myClass
+
+SEMERR#12:      Undefined identifier on line# 26 : myClass
+SEMERR#1:       Undeclared identifier on line# 29 : c1
+
+SEMERR#1:       Undeclared identifier on line# 30 : f_doesNotExist
+
+SEMERR#1:       Undeclared identifier on line# 36 : j
+
+SEMERR#1:       Undeclared identifier on line# 36 : k
+
+SEMERR#1:       Undeclared identifier on line# 36 : k
+
+
+Symbol table for: free_f1 on line# 34
+        ABC free_f1(int a){
+                int i;
+        };
+
+
+
+----------Output for global scope-------
+class ABC{
+        int f1(cl1 par1, float par2);
+};
+        ABC free_f1(int a);
+program{
+        int a;
+        ABC abc;
+};
+----------------------------------------
+
+
+file parsing is finished
+----------------------------------------
+0 ERROR:s
+0 CASCADING ERRORS:s
+13 SEMANTIC ERROR:s

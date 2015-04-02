@@ -1,0 +1,170 @@
+Enter file name to scan:
+C:\Users\vika\Desktop\HarutyunyanCompilerAss3\files\sourceFile.cpp
+.\files\Assignment2\Syntax\RULLS.txt
+.\files\Assignment2\Syntax\FIRST.txt
+.\files\Assignment2\Syntax\FOLLOW.txt
+.\files\Assignment2\Syntax\FIRSTFOLLOW.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+.\files\Assignment2\FileSystem\TransitionTable.txt
+.\files\Assignment2\FileSystem\code.txt
+.\files\Assignment2\FileSystem\reservedWords.txt
+SEMERR#11:      Multiply declared identifier on the line# 6: bcd
+SEMERR#11:      Multiply declared identifier on the line# 7: ABC
+SEMERR#11:      Multiply declared identifier on the line# 11: i
+SEMERR#11:      Multiply declared identifier on line# 13 : ABC
+
+Symbol table for: ABC on line# 13
+Function 'ABC' on line# 13 is ignored because of an error on its' decalaration=>
+scope is not printed
+SEMERR#11:      Multipely declared identifier on line# 17 : k
+SEMERR#11:      Multiply declared identifier on the line# 20: func1
+
+SEMERR#7:       Assignment Type mismatch on line# 21 : int is required
+SEMERR#6:       Type mismatch on line#  23:     parameters of the same type are rquired
+SEMERR#6:       Type mismatch on line#  27:     parameters of the same type are rquired
+
+SEMERR#8:       Invalid return type for function  <func1>  on line#  28 is expected <int>
+
+SEMERR#6:       Type mismatch on line#  29:     parameters of the same type are rquired
+SEMERR#6:       Type mismatch on line#  32:     parameters of the same type are rquired
+SEMERR#6:       Type mismatch on line#  34:     parameters of the same type are rquired
+
+Symbol table for: func1 on line# 17
+        int func1(int k){
+                int ABC;
+                float i;
+                int j;
+                int p;
+        };
+
+SEMERR#11:      Multiply declared identifier on line# 43 : func1
+
+Symbol table for: func1 on line# 43
+Function 'func1' on line# 43 is ignored because of an error on its' decalaration=>
+scope is not printed
+SEMERR#1:       Undeclared identifier on line# 76: func11_ABC
+
+Symbol table for: func1 on line# 75
+        int func1(){
+        };
+
+SEMERR#11:      Multiply declared identifier on line# 79 : func1
+
+Symbol table for: func1 on line# 79
+Function 'func1' on line# 79 is ignored because of an error on its' decalaration=>
+scope is not printed
+SEMERR#11:      Multiply declared identifier on line# 92 : CDE
+
+Symbol table for: CDE on line# 92
+Function 'CDE' on line# 92 is ignored because of an error on its' decalaration=>
+scope is not printed
+SEMERR#1:       Undeclared identifier on line# 100 : i
+
+SEMERR#1:       Undeclared identifier on line# 100 : i
+
+SEMERR#1:       Undeclared identifier on line# 102 : i
+
+SEMERR#1:       Undeclared identifier on line# 104 : i
+
+SEMERR#5:               Invalid parameter list on line# 104     :free_function1 2 parameters are required
+
+Symbol table for: func11_ABC on line# 96
+        int func11_ABC(float kl, BCD bcd){
+                int j;
+                int k;
+                int l;
+        };
+
+SEMERR#11:      Multiply declared identifier on line# 111 : func11_ABC
+
+Symbol table for: func11_ABC on line# 111
+Function 'func11_ABC' on line# 111 is ignored because of an error on its' decalaration=>
+scope is not printed
+SEMERR#11:      Multipely declared identifier on line# 117 : i
+
+SEMERR#7:       Assignment Type mismatch on line# 125 : float is required
+SEMERR#1:       Undeclared identifier on line# 127: nestedFor
+SEMERR#1:       Undeclared identifier on line# 129: nestedFor
+SEMERR#1:       Undeclared identifier on line# 129: nestedFor
+
+Symbol table for: free_function1 on line# 117
+        int free_function1(int i, int j){
+                ABC abc;
+                BCD bcd;
+                CDE cde;
+                int k;
+                float kk;
+                int l;
+        };
+
+SEMERR#11:      Multiply declared identifier  on the line 138: CDE
+
+SEMERR#7:       Assignment Type mismatch on line# 164 : int is required
+SEMERR#11:      Multipely declared identifier on line# 167 : i
+SEMERR#1:       Undeclared identifier on line# 175: nestedFor
+SEMERR#1:       Undeclared identifier on line# 177: nestedFor
+SEMERR#1:       Undeclared identifier on line# 177: nestedFor
+
+SEMERR#8:       Invalid return type for function  <free_function1>  on line#  178       is expected <float>
+
+
+Symbol table for: free_function1 on line# 167
+        float free_function1(int i, int j){
+                ABC abc;
+                BCD bcd;
+                CDE cde;
+                int k;
+                int l;
+        };
+
+SEMERR#11:      Multiply declared identifier on line# 182 : free_function1
+
+Symbol table for: free_function1 on line# 182
+Function 'free_function1' on line# 182 is ignored because of an error on its' decalaration=>
+scope is not printed
+SEMERR#11:      Multiply declared identifier on line# 200 : ABC
+
+Symbol table for: ABC on line# 200
+Function 'ABC' on line# 200 is ignored because of an error on its' decalaration=>
+scope is not printed
+
+
+----------Output for global scope-------
+class ABC{
+        int a;
+        BCD bcd;
+        int func1(int k);
+        int i;
+};
+class BCD{
+        int a;
+        ABC ab;
+        CDE array_cde [3][4];
+        int b;
+        CDE cde;
+        int func1();
+};
+class CDE{
+        int a;
+        CDE array_cde [3][4];
+        int b;
+        CDE cde;
+        int free_function1(int i, int j);
+        int func11_ABC(float kl, BCD bcd);
+        int ssssssssssssss;
+};
+        float free_function1(int i, int j);
+program{
+        ABC abc;
+};
+----------------------------------------
+
+
+file parsing is finished
+----------------------------------------
+0 ERROR:s
+0 CASCADING ERRORS:s
+37 SEMANTIC ERROR:s
